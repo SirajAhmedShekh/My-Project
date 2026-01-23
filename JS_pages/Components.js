@@ -1,0 +1,136 @@
+export const navBar = () => {
+
+    return `
+    <header class="navbar">
+    <div class="logo">Furni<span>Home</span></div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Shop ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Office</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <input type="text" placeholder="Search furniture..." class="search">
+      <a href="#">♡</a>
+      <a href="#">🛒</a>
+      <a href="#">👤</a>
+    </div>
+  </header>
+    `
+};
+
+
+export const navStyle = () => {
+
+    return `
+    .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: var(--gray);
+  border-bottom: 1px solid rgb(185, 182, 182);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.logo span {
+  color: var(--golden-hour);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: var(--golden-hour);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 40px; /* initial position slightly down */
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  min-width: 180px;
+  max-height: 0; /* Initially hidden */
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  transform: translateY(-10px); /* Slight lift effect */
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--gray);
+  color: var(--golden-hour);
+}
+
+.dropdown:hover .dropdown-menu {
+  max-height: 500px; /* Enough to show all items */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  font-size: 18px;
+}
+    `
+}

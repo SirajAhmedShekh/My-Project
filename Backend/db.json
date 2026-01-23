@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "siraj",
+      "password": "$2a$10$L5Qj0OHb5ZhkbCljyH2pmegZKpETd6Ea9SxupwpjP29ulBtjF3nfC",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "img": "",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    }
+  ]
+}
