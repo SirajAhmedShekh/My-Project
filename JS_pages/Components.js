@@ -1,11 +1,14 @@
+
+// ==== this is reuseble code ====
+
 export const navBar = () => {
 
-    return `
+  return `
     <header class="navbar">
     <div class="logo">Furni<span>Home</span></div>
 
     <nav>
-      <ul class="menu">
+      <ul class="menu">                   
         <li><a href="#">Home</a></li>
 
         <li class="dropdown">
@@ -38,15 +41,33 @@ export const navBar = () => {
 
 export const navStyle = () => {
 
-    return `
+  return `
     .navbar {
+    width:100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
   background: var(--gray);
   border-bottom: 1px solid rgb(185, 182, 182);
+  // position: fixed;
+  // animation: scroll-transition;
+  // animation-timeline: scroll(y);
 }
+
+// @keyframes scroll-transition {
+//   0%{
+//     background-color:transparent;
+//   }
+
+//   5%{
+//   background:var(--gray);
+//   }
+
+//   100%{
+//     background-color: var(--gray);
+//   }
+// } 
 
 .logo {
   font-size: 24px;
@@ -74,6 +95,31 @@ export const navStyle = () => {
   font-weight: 500;
 }
 
+// ==== underline animation code ===
+.menu li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--golden-hour);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.menu li a:hover::after,
+.menu li a:focus::after {
+  transform: scaleX(1);
+}
+  
 .menu a:hover {
   color: var(--golden-hour);
 }
@@ -81,7 +127,7 @@ export const navStyle = () => {
 /* Dropdown */
 .dropdown-menu {
   position: absolute;
-  top: 40px; /* initial position slightly down */
+  top: 30px; /* initial position slightly down */
   left: 0;
   background: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
