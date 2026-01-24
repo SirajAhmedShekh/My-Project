@@ -5,7 +5,7 @@ export const navBar = () => {
 
   return `
     <header class="navbar">
-    <div class="logo">Furni<span>Home</span></div>
+    <div class="logo">Furn<span>it<i class="fa-solid fa-couch"></i>re</span></div>
 
     <nav>
       <ul class="menu">                   
@@ -30,9 +30,8 @@ export const navBar = () => {
 
     <div class="nav-right">
       <input type="text" placeholder="Search furniture..." class="search">
-      <a href="#">♡</a>
-      <a href="#">🛒</a>
-      <a href="#">👤</a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="#"><i class="fa-solid fa-user"></i></a>
     </div>
   </header>
     `
@@ -50,24 +49,27 @@ export const navStyle = () => {
   padding: 15px 40px;
   background: var(--gray);
   border-bottom: 1px solid rgb(185, 182, 182);
-  // position: fixed;
-  // animation: scroll-transition;
-  // animation-timeline: scroll(y);
+  position: fixed;
+  animation: scroll-transition;
+  animation-timeline: scroll(y);
+  z-index:2;
 }
 
-// @keyframes scroll-transition {
-//   0%{
-//     background-color:transparent;
-//   }
+@keyframes scroll-transition {
+  0%{
+    background-color:transparent;
+  }
 
-//   5%{
-//   background:var(--gray);
-//   }
+  5%{
+  background:var(--gray);
+  box-shadow:0 0 10px var(--black);
+  }
 
-//   100%{
-//     background-color: var(--gray);
-//   }
-// } 
+  100%{
+    background-color: var(--gray);
+     box-shadow:0 0 10px var(--black);
+  }
+} 
 
 .logo {
   font-size: 24px;
@@ -96,6 +98,7 @@ export const navStyle = () => {
 }
 
 // ==== underline animation code ===
+
 .menu li a {
   position: relative;
   display: inline-block;
@@ -119,7 +122,7 @@ export const navStyle = () => {
 .menu li a:focus::after {
   transform: scaleX(1);
 }
-  
+
 .menu a:hover {
   color: var(--golden-hour);
 }
@@ -145,15 +148,17 @@ export const navStyle = () => {
 
 .dropdown-menu li a {
   display: block;
-  padding: 10px 15px;
+  padding: 8px 15px;
   color: var(--black);
   text-decoration: none;
+  margin-bottom:0.3rem;
 }
 
 .dropdown-menu li a:hover {
   background: var(--gray);
   color: var(--golden-hour);
 }
+  
 
 .dropdown:hover .dropdown-menu {
   max-height: 500px; /* Enough to show all items */
@@ -165,7 +170,7 @@ export const navStyle = () => {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .search {
@@ -174,9 +179,19 @@ export const navStyle = () => {
   border-radius: 4px;
 }
 
+.search:focus{
+outline:none;
+border: 2px solid var(--golden-hour);
+}
+
+.nav-right a:hover{
+color:var(--golden-hour);
+}
+
 .nav-right a {
   text-decoration: none;
   font-size: 18px;
+  color:var( --black: #000) ;
 }
-    `
+ `
 }

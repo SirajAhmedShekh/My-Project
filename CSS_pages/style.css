@@ -15,3 +15,131 @@
   --antique-brown: #9b281a;
 }
 
+/* ==== SECTIONS PART === */
+
+.card_container {
+  width: 100%;
+  padding: 2rem 0;
+  /* border: 2px solid blue; */
+}
+
+.card_container h1 {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card_container h1 span {
+  color: var(--golden-hour);
+  margin-left: 15px;
+  font-family: mv boli;
+}
+
+.card_container h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--golden-hour);
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.card_container .card_box {
+  width: 100%;
+  margin: 0px auto;
+  background-color: var(--gray);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  grid-template-columns: auto auto auto;
+  /* border: 2px solid rgb(7, 186, 199); */
+  /* background-image: linear-gradient(var(--gray), var(--golden-hour) var(--white)); */
+  padding-top: 80px;
+}
+
+.card_container .card_box .card {
+  width: 20rem;
+  height: 28rem;
+  /* border-radius: 50%; */
+  margin: 0 15px 70px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 -3px 10px 0px var(--black);
+  transition: 0.4s;
+}
+
+.card_container .card_box .card:hover {
+  border-radius: 20px;
+}
+
+.card_container .card_box .card img {
+  width: 20rem;
+  height: 20rem;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 10px var(--black);
+  z-index: 1;
+  transition: 0.4s;
+  /* border: 2px solid green; */
+}
+
+.card_container .card_box .card:hover img {
+  border-radius: 20px;
+  margin-top: -250px;
+  transition: 0.5s ease-in-out;
+}
+
+.card_container .card_box .card .card_info {
+  width: 18rem;
+  height: 11rem;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* border: 2px solid rgb(1, 24, 128); */
+}
+
+.card_container .card_box .card:hover .card_info {
+  top: 60%;
+}
+
+.card_container .card_box .card .card_info h2 {
+  color: var(--golden-hour);
+}
+
+.card_container .card_box .card .card_info p,
+h3 {
+  color: var(--black);
+}
+
+.card_container .card_box .card .card_info .review i {
+  color: var(--golden-hour);
+}
+
+.card_container .card_box .card .card_info .review .card_btn {
+  padding: 5px 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: var(--black);
+}
+
+.card_container .card_box .card .card_info .review .card_btn:hover{
+  background-color: var(--golden-hour);
+  color: var(--black);
+}
