@@ -61,12 +61,12 @@ export const navStyle = () => {
   }
 
   5%{
-  background:var(--gray);
+  background:var(--white);
   box-shadow:0 0 10px var(--black);
   }
 
   100%{
-    background-color: var(--gray);
+    background-color: var(--white);
      box-shadow:0 0 10px var(--black);
   }
 } 
