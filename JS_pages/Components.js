@@ -193,5 +193,9 @@ color:var(--golden-hour);
   font-size: 18px;
   color:var( --black: #000) ;
 }
+
+.nav-right a li{
+color:var(--black: #000);
+}
  `
 }
