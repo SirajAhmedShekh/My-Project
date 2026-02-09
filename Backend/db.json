@@ -6,7 +6,34 @@
       "id": 1
     }
   ],
-  "products": [
+  "living": [
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    }
+  ],
+  "baddroom": [
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    }
+  ],
+  "dining": [
+    {
+      "img": "",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    }
+  ],
+  "office": [
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
       "title": "sofa",
