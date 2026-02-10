@@ -8,32 +8,445 @@
   ],
   "living": [
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/1-leaving-pieces-3-seat-l.jpg",
+      "title": "L Shape Chair Sofa",
+      "description": "2 Pieces 3 Seat L Shape Couch with Ottoman and Accent Chair Sofa Set Polyester Fabric for Living Room, Green",
+      "price": 42000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/2-pieces-living-room.jpg",
+      "title": "Sectional Sofa Couches",
+      "description": "2 Piece Living Room Sofa Set, Sectional Sofa Couches for Living Room,",
+      "price": 46000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/3-leaving-set.jpg",
+      "title": "Modern chair sofa",
+      "description": "Modern living rooms with the right furniture",
+      "price": 53000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/4-leaving-set.avif",
+      "title": "Alaska Living Room sofa",
+      "description": "Alaska 3 Seater Living Room Sofa Set with 2 Lounge Chairs",
+      "price": 85000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/5-leavingset.jpg",
+      "title": "Modern Luxury Sofa",
+      "description": "Wooden L Shaped Modern Luxury Sofa Set, For Living Room",
+      "price": 57000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/6-leavingset-img.avif",
+      "title": "L Shape 6 Seater",
+      "description": "Wakefit Skiver L Shape 6 Seater Sofa Set (3 Seater + Right Aligned Chaise)",
+      "price": 47000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/7-leaving-set.avif",
+      "title": "Mirabel Sofa Set",
+      "description": "Wakefit Mirabel Sofa Set (3+2) Seater",
+      "price": 55000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/8-leaving-images.webp",
+      "title": "Luxuri sofa",
+      "description": "A comfortable and stylish sofa or sectional forms the focal point of any living room",
+      "price": 65000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/9-leaving-set.webp",
+      "title": "Living room sofa set",
+      "description": "Complete your living room setup with a well-chosen rug that ties the space together",
+      "price": 72000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/10-leaving-rugs_blog.webp",
+      "title": "Mix of ambient sofa",
+      "description": "Brighten your living room with a mix of ambient, task, and accent lighting.",
+      "price": 80000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/11-leaving-Sofa-Set-Design-Modern.webp",
+      "title": "Chester Sofa",
+      "description": "Chester Sofa Design With 04 Puffy & Round Center Table",
+      "price": 40000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/12-leaving-luxury-modern-sofa.jpg",
+      "title": "U Shaped Sofa Set",
+      "description": "8 Seater Rectangular Luxury Modern U Shaped Sofa Set Design, Living Room",
+      "price": 48000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/13-modern-living-room.avif",
+      "title": "Beige sofa set",
+      "description": "Modern indian living room with beige sofa set and intricate wallpaper with terracotta wall",
+      "price": 45000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/14-leaving-unit-with-marble.avif",
+      "title": "TV furniture",
+      "description": "Classic contemporary TV unit in greige and taupe tones with wall mouldings",
+      "price": 60000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/15-modern-living-room.avif",
+      "title": "Sage green sofa",
+      "description": "Modern living room with sage green sofa set and curved wall panel",
+      "price": 55000,
       "review": "5star"
     }
   ],
-  "baddroom": [
+  "sofabed": [
+     {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/1-Modern-Bedroom-Furniture.webp",
+      "title": "Luxurious Upholstered Bedroom Suite",
+      "description": "Premium velvet or suede-finish fabric with high-density foam padding",
+      "price":145000,
+      "review": "5star"
+    },
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/2-bedroom-furniture.avif",
+      "title": "Contemporary Master Bedroom Suite",
+      "description": "Modern King Size Bed with Vertical Channel-Tufted Headboard and Matching Bench.",
+      "price": 125000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/3-luxury-bedside.webp",
+      "title": "Luxurious White Geometric Bedroom Suite",
+      "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Trim.",
+      "price": 185000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/4-bedroom-set.webp",
+      "title": "Luxurious White Geometric Suite",
+      "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Metallic Trim.",
+      "price": 125000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/5-bedroom-set.png",
+      "title": "Modern Earth-Tone Bedroom Suite",
+      "description": "Contemporary Master Suite with Rust Velvet King Bed and Geometric Gold Wall Art.",
+      "price": 165000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/6-sofabed-set.jpg",
+      "title": "Luxurious White Suite",
+      "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Metallic Trim.",
+      "price": 135000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/7-Modern-Luxury-Bedroom-Design.jpg",
+      "title": "Master Suite with Vertical Channel Tufting",
+      "description": "Modern Vertical Channel-Tufted King Size Bed with Matching Upholstered Bench.",
+      "price": 110500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/8-romantic-bedroom.jpg",
+      "title": "Modern Royal & Cream Master Suite",
+      "description": "Modern Purple Velvet Paneled King Bed with Cream Tufted Bench.",
+      "price": 115000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/9-bedset-luxury-set.webp",
+      "title": "Luxurious White Geometric Bedroom Suite",
+      "description": "Ornate Hand-Carved Royal Teak Wood Bedroom Suite in Ivory and Gold Leaf.",
+      "price": 225000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/10-luxury-bedroom-set.jpg",
+      "title": "Luxurious White Geometric Bedroom Suite",
+      "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Metallic Trim.",
+      "price": 185000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/11-sofa-bed.webp",
+      "title": "Premium Quality Sofa",
+      "description": "Luxo Nation Luxury Sofa Bed Modern Design & Premium Quality Sofa",
+      "price": 123000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/12-sofabed-Bedroom.jpg",
+      "title": "Modern Charm sofa",
+      "description": "Contemporary Bedrooms with Mid-Century Modern Charm: A Perfect Fusion of Style",
+      "price": 215000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/13-sofabed-large-bedroom.jpg",
+      "title": "Mid-Century sofa",
+      "description": "Color Palettes in Mid-Century Bedroom Designs",
+      "price": 205000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/14-sofabed-luxury.jpg",
+      "title": "Open Concept Bedroom sofa",
+      "description": "Serene-Open-Concept-Bedroom-with-Mid-Century-Minimalism",
+      "price": 145000,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/15-sofabed-luxury.webp",
+      "title": " Double Size sofa",
+      "description": "Wooden Platform Sofa Bed, Double Size, Contemporary Style",
+      "price": 132000,
       "review": "5star"
     }
   ],
   "dining": [
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/1-%20dining-table.jpg",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img":"https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/2-luxury-glass-dining.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img":"https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/3-modern-dining-area-with-wooden-accents.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/4-luxury-dining-setup-with-elegant-chairs.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/5-modern-luxury-dining-room-decor.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/6-elegant-dining-space-with-modern-decor.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/7-contemporary-dining-space-with-minimalist-touch.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/8-modern-dining-area-with-checkered-chairs.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/9-elegant-teak-wood-dining-room.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/10-elegant-dining-table-arrangement.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/11-luxury-dining-room-with-wooden-accents.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/12-modern-glass-dining-setup-with-chic-decor.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/13-elegant-luxury-dining-room-design.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/14-modern-wooden-dining-room-setup.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/15-luxury-rectangular-dining-setup.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/16-modern-luxury-dining-room-design.avif",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      },
+      {
+        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/1-%20dining-table.jpg",
+        "title": "Wooden Dining Table Set",
+        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
+        "price": 500,
+        "review": "5star"
+      }
+  ],
+  "office": [
     {
-      "img": "",
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
       "title": "sofa",
       "description": "sofa description",
       "price": 500,
       "review": "5star"
-    }
-  ],
-  "office": [
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
       "title": "sofa",
