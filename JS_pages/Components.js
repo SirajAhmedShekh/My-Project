@@ -191,11 +191,11 @@ color:var(--golden-hour);
 .nav-right a {
   text-decoration: none;
   font-size: 18px;
-  color:var( --black: #000) ;
+  color:var( --black) ;
 }
 
 .nav-right a li{
-color:var(--black: #000);
+color:var(--black);
 }
  `
 }

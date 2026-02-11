@@ -223,127 +223,176 @@
   "dining": [
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/1-%20dining-table.jpg",
-        "title": "Wooden Dining Table Set",
+        "title": "Wooden dining table set",
         "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "price": 132000,
         "review": "5star"
       },
       {
         "img":"https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/2-luxury-glass-dining.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "8-Seater designer dining table",
+        "description": "8-seater designer dining table and bevelled wall mirror",
+        "price": 122000,
         "review": "5star"
       },
       {
         "img":"https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/3-modern-dining-area-with-wooden-accents.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Round wooden dining table",
+        "description": "Boho dining room with round wooden dining table and mint green crockery unit",
+        "price": 111000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/4-luxury-dining-setup-with-elegant-chairs.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Marble dining table set",
+        "description": "6-Seater dining room with marble dining table and wooden flooring",
+        "price": 125000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/5-modern-luxury-dining-room-decor.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Dining chairs and fluted wall",
+        "description": "Dining room with earthy dining chairs and fluted wall",
+        "price": 122000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/6-elegant-dining-space-with-modern-decor.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Black dining table and grey plush chairs",
+        "description": "Modern dining room with black marble dining table and grey plush chairs",
+        "price": 118000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/7-contemporary-dining-space-with-minimalist-touch.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Marble dining table",
+        "description": "Modern dining room with marble dining table white and green chairs",
+        "price": 127000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/8-modern-dining-area-with-checkered-chairs.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Dining table top and checkered chairs",
+        "description": "Modern 4-seater dining room with marble dining table top and checkered chairs",
+        "price": 113000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/9-elegant-teak-wood-dining-room.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Wooden furniture and cane sideboard",
+        "description": "Boho chic dining room with wooden furniture and cane sideboard",
+        "price": 124000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/10-elegant-dining-table-arrangement.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "8-Seater dining room with cream chairs",
+        "description": "Mid-century modern 8-seater dining room with cream chairs",
+        "price": 132000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/11-luxury-dining-room-with-wooden-accents.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Dining room with dual tone chairs",
+        "description": "Indian 6-seater dining room with dual tone chairs and open shelves",
+        "price": 126000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/12-modern-glass-dining-setup-with-chic-decor.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Dining room with chairs",
+        "description": "Modern minimal dining room with chairs with metal frame and arch walls",
+        "price":115500,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/13-elegant-luxury-dining-room-design.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Oval wooden table and black chairs",
+        "description": "Modern contemporary dining room with oval wooden table and black chairs",
+        "price": 142000,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/14-modern-wooden-dining-room-setup.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": " Dining room with wooden dining table",
+        "description": "Transitional dining room with wooden dining table and victorian style crockery unit",
+        "price": 133500,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/15-luxury-rectangular-dining-setup.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Indian modern 6-seater dining Table",
+        "description": "Indian modern 6-seater dining room with mustard chairs and patterned",
+        "price": 136500,
         "review": "5star"
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/16-modern-luxury-dining-room-design.avif",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
-        "review": "5star"
-      },
-      {
-        "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/1-%20dining-table.jpg",
-        "title": "Wooden Dining Table Set",
-        "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 500,
+        "title": "Marble dining table and wall mirror",
+        "description": "Modern minimal dining room with marble dining table and wall mirror paneling",
+        "price": 128500,
         "review": "5star"
       }
   ],
   "office": [
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/1-office-chair.webp",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/2-office-chair-gray.jpg",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/3-%20office-chair.webp",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/4-office-chair.webp",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/5-office-chairConfident_HB.webp",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/6-office-chairtransform-prime.webp",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/7-classic-highback-office-chair.webp",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/8-midback-office-chair.webp",
+      "title": "sofa",
+      "description": "sofa description",
+      "price": 500,
+      "review": "5star"
+    },
+    {
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/9-Gavisco-product-office-chair.webp",
       "title": "sofa",
       "description": "sofa description",
       "price": 500,
@@ -357,98 +406,35 @@
       "review": "5star"
     },
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/11-office-chair.jpg",
       "title": "sofa",
       "description": "sofa description",
       "price": 500,
       "review": "5star"
     },
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/12-office-chair-modern.jpg",
       "title": "sofa",
       "description": "sofa description",
       "price": 500,
       "review": "5star"
     },
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/13-black-leather-office-chair.jpg",
       "title": "sofa",
       "description": "sofa description",
       "price": 500,
       "review": "5star"
     },
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/14-office-chair.jpg",
       "title": "sofa",
       "description": "sofa description",
       "price": 500,
       "review": "5star"
     },
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
-      "title": "sofa",
-      "description": "sofa description",
-      "price": 500,
-      "review": "5star"
-    },
-    {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/1-%20sofa-unnamed_img.webp?raw=true",
+      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/15-posture-chair.webp",
       "title": "sofa",
       "description": "sofa description",
       "price": 500,

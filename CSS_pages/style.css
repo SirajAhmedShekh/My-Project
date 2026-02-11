@@ -10,10 +10,10 @@
 p,
 h3 {
   color: var(--black);
-   font-style: italic;
+  font-style: italic;
 }
 
-h2{
+h2 {
   text-transform: capitalize;
 }
 
@@ -106,7 +106,7 @@ body {
 
 .card_container .card_box .card .card_info {
   width: 22rem;
-  height: 80%;
+  height: 90%;
   position: absolute;
   text-align: center;
   /* border-radius: 15px; */
@@ -119,8 +119,9 @@ body {
   padding: 2rem;
 }
 
-.card_container .card_box .card .card_info p, h3{
-  color:var(--white);
+.card_container .card_box .card .card_info p,
+h3 {
+  color: var(--white);
 }
 
 .card_container .card_box .card:hover .card_info {
@@ -132,10 +133,10 @@ body {
 
 @keyframes show-card {
   50% {
-    transform: translateY(-7rem);
+    transform: translateY(-8.5rem);
   }
   100% {
-    transform: translateY(-4.5rem);
+    transform: translateY(-7rem);
   }
 }
 
@@ -151,7 +152,7 @@ body {
   padding: 9px 19px;
   margin-top: 1rem;
   border-radius: 5px;
-  color:var(--black);
+  color: var(--black);
   font-weight: bold;
   font-size: 15px;
   outline: none;
@@ -275,11 +276,11 @@ body {
 @keyframes detail_2img {
   from {
     opacity: 0;
-    transform: translatex(100px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
-    transform: translatex(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -343,6 +344,19 @@ body {
   margin: 2rem 0;
 }
 
+.section06 h1 {
+  margin-bottom: 2rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+}
+
+.section06 h1 span {
+  color: var(--golden-hour);
+  margin-left: 15px;
+  font-family: mv boli;
+  font-size: 38px;
+  font-weight: bold;
+}
+
 .section06 .card_container {
   width: 100%;
 }
@@ -358,7 +372,7 @@ body {
 
 .section06 .card_container .card {
   width: 41%;
-  height: 17rem;
+  height: 19rem;
   display: flex;
   border-radius: 10px 10px 10px 10px;
   transform: skewX(15deg);
@@ -385,7 +399,7 @@ body {
 
 .section06 .card_container .card img {
   width: 100%;
-  height: 17rem;
+  height: 19rem;
   z-index: 1;
   animation: remove-card 0.8s forwards;
   border-radius: 10px 10px 10px 10px;
@@ -416,7 +430,7 @@ body {
 
 .section06 .card_container .card .card_info {
   width: 50%;
-  height: 17rem;
+  height: 19rem;
   position: fixed;
   right: 0%;
   text-align: center;
@@ -424,13 +438,13 @@ body {
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
-   background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   border-radius: 0px 10px 10px 0px;
 }
 
 .section06 .card_container .card .card_info p {
   color: var(--white);
-   font-style: italic;
+  font-style: italic;
 }
 
 .section06 .card_container .card .card_info h2,
@@ -440,7 +454,7 @@ body {
 }
 
 .section06 .card_container .card .card_info .card_btn {
-   padding: 9px 19px;
+  padding: 9px 19px;
   margin-top: 1rem;
   border-radius: 5px;
   color: var(--black);
@@ -457,42 +471,182 @@ body {
   color: var(--black);
 }
 
-.section06 .video_container {
+.section06 .img_container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 3rem;
 }
 
-.section06 .video_container video {
-  width: 50%;
-  height: 30rem;
-  object-fit: cover;
+.section06 .img_container .img_div {
+  width: 45%;
+  height: 25rem;
   box-shadow: 0px 0px 6px 0px;
-  transform: skewY(5);
+  animation: dining_img linear;
+  animation-timeline: view(0);
+  animation-range: entry 0 cover 40%;
+  overflow: hidden;
 }
 
-.section06 .video_container .description {
-  width: 40%;
+@keyframes dining_img {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.section06 .img_container .img_div img {
+  width: 100%;
   height: 25rem;
+  box-shadow: 0px 0px 6px 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.section06 .img_container img:hover {
+  transform: scale(1.2);
+}
+
+.section06 .img_container .description {
+  width: 45%;
   text-align: center;
-  line-height: 1.7rem;
+  line-height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: dining_discr linear;
+  animation-timeline: view(0);
+  animation-range: entry 0 cover 40%;
 }
 
-.section06 .video_container .description h1 {
+@keyframes dining_discr {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.section06 .img_container .description h1 {
   margin-bottom: 2rem;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
 }
 
-.section06 .video_container .description h1 span {
+.section06 .img_container .description h1 span {
   color: var(--golden-hour);
   margin-left: 15px;
   font-family: mv boli;
   font-size: 38px;
   font-weight: bold;
   line-height: 2.5rem;
+}
+
+/* === section 07 ===  */
+
+.section07 {
+  width: 100%;
+  padding: 10rem 0rem;
+  /* border: 2px solid red; */
+}
+
+.section07 .office_card_box {
+  width: 100%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-content: center;
+  justify-items: center;
+  padding-top: 50px;
+}
+
+.section07 .office_card_box .office_card {
+  /* border: 2px solid rgb(3, 6, 196); */
+  width: 25rem;
+  position: relative;
+  height: 25rem;
+  background-color: rgb(212, 207, 207);
+  overflow: hidden;
+}
+
+.section07 .office_card_box .office_card .img_1 {
+  width: 24rem;
+  height: 23rem;
+  position: absolute;
+  right: 56%;
+  bottom: 54%;
+  transform: skewY(5deg) skewX(5deg);
+}
+
+.section07 .office_card_box .office_card .img_1:hover {
+  width: 25rem;
+  height: 28rem;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  transition: all 0.8s ease-in-out;
+  transform: skewY(0deg) skewX(0deg);
+}
+
+.section07 .office_card_box .office_card .img_2 {
+  width: 24rem;
+  height: 23rem;
+  position: absolute;
+  transform: skewY(-3deg) skewX(-5deg);
+  left: 52%;
+  bottom: 52%;
+}
+
+.section07 .office_card_box .office_card .img_2:hover {
+  width: 25rem;
+  height: 28rem;
+  left: 0%;
+  bottom: 0%;
+  z-index: 1;
+  transition: all 0.8s ease-in-out;
+  transform: skewY(0deg) skewX(0deg);
+}
+
+.section07 .office_card_box .office_card .img_3 {
+  width: 24rem;
+  height: 23rem;
+  position: absolute;
+  transform: skewY(-3deg) skewX(-5deg);
+  top: 53%;
+  right: 56%;
+}
+
+.section07 .office_card_box .office_card .img_3:hover {
+  width: 25rem;
+  height: 28rem;
+  right: 0%;
+  top: 0%;
+  z-index: 1;
+  transition: all 0.8s ease-in-out;
+  transform: skewY(0deg) skewX(0deg);
+}
+
+.section07 .office_card_box .office_card .img_4 {
+  width: 24rem;
+  height: 23rem;
+  position: absolute;
+  transform: skewY(5deg) skewX(5deg);
+  left: 52%;
+  top: 55%;
+}
+
+.section07 .office_card_box .office_card .img_4:hover {
+  width: 25rem;
+  height: 28rem;
+  left: 0%;
+  top: 0%;
+  z-index: 1;
+  transition: all 0.8s ease-in-out;
+  transform: skewY(0deg) skewX(0deg);
 }
