@@ -11,106 +11,91 @@
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/1-leaving-pieces-3-seat-l.jpg",
       "title": "L Shape Chair Sofa",
       "description": "2 Pieces 3 Seat L Shape Couch with Ottoman and Accent Chair Sofa Set Polyester Fabric for Living Room, Green",
-      "price": 42000,
-      "review": "5star"
+      "price": 42000      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/2-pieces-living-room.jpg",
       "title": "Sectional Sofa Couches",
       "description": "2 Piece Living Room Sofa Set, Sectional Sofa Couches for Living Room,",
-      "price": 46000,
-      "review": "5star"
+      "price": 46000      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/3-leaving-set.jpg",
       "title": "Modern chair sofa",
       "description": "Modern living rooms with the right furniture",
-      "price": 53000,
-      "review": "5star"
+      "price": 53000      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/4-leaving-set.avif",
       "title": "Alaska Living Room sofa",
       "description": "Alaska 3 Seater Living Room Sofa Set with 2 Lounge Chairs",
-      "price": 85000,
-      "review": "5star"
+      "price": 85000    
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/5-leavingset.jpg",
       "title": "Modern Luxury Sofa",
       "description": "Wooden L Shaped Modern Luxury Sofa Set, For Living Room",
-      "price": 57000,
-      "review": "5star"
+      "price": 57000      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/6-leavingset-img.avif",
       "title": "L Shape 6 Seater",
       "description": "Wakefit Skiver L Shape 6 Seater Sofa Set (3 Seater + Right Aligned Chaise)",
-      "price": 47000,
-      "review": "5star"
+      "price": 47000     
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/7-leaving-set.avif",
       "title": "Mirabel Sofa Set",
       "description": "Wakefit Mirabel Sofa Set (3+2) Seater",
-      "price": 55000,
-      "review": "5star"
+      "price": 55000   
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/8-leaving-images.webp",
       "title": "Luxuri sofa",
       "description": "A comfortable and stylish sofa or sectional forms the focal point of any living room",
-      "price": 65000,
-      "review": "5star"
+      "price": 65000     
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/9-leaving-set.webp",
       "title": "Living room sofa set",
       "description": "Complete your living room setup with a well-chosen rug that ties the space together",
-      "price": 72000,
-      "review": "5star"
+      "price": 72000      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/10-leaving-rugs_blog.webp",
       "title": "Mix of ambient sofa",
       "description": "Brighten your living room with a mix of ambient, task, and accent lighting.",
-      "price": 80000,
-      "review": "5star"
+      "price": 80000      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/11-leaving-Sofa-Set-Design-Modern.webp",
       "title": "Chester Sofa",
       "description": "Chester Sofa Design With 04 Puffy & Round Center Table",
-      "price": 40000,
-      "review": "5star"
+      "price": 40000    
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/12-leaving-luxury-modern-sofa.jpg",
       "title": "U Shaped Sofa Set",
       "description": "8 Seater Rectangular Luxury Modern U Shaped Sofa Set Design, Living Room",
-      "price": 48000,
-      "review": "5star"
+      "price": 48000    
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/13-modern-living-room.avif",
       "title": "Beige sofa set",
       "description": "Modern indian living room with beige sofa set and intricate wallpaper with terracotta wall",
-      "price": 45000,
-      "review": "5star"
+      "price": 45000  
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/14-leaving-unit-with-marble.avif",
       "title": "TV furniture",
       "description": "Classic contemporary TV unit in greige and taupe tones with wall mouldings",
-      "price": 60000,
-      "review": "5star"
+      "price": 60000     
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/15-modern-living-room.avif",
       "title": "Sage green sofa",
       "description": "Modern living room with sage green sofa set and curved wall panel",
-      "price": 55000,
-      "review": "5star"
+      "price": 55000      
     }
   ],
   "sofabed": [
@@ -118,106 +103,105 @@
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/1-Modern-Bedroom-Furniture.webp",
       "title": "Luxurious Upholstered Bedroom Suite",
       "description": "Premium velvet or suede-finish fabric with high-density foam padding",
-      "price":145000,
-      "review": "5star"
+      "price":145000      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/2-bedroom-furniture.avif",
       "title": "Contemporary Master Bedroom Suite",
       "description": "Modern King Size Bed with Vertical Channel-Tufted Headboard and Matching Bench.",
-      "price": 125000,
-      "review": "5star"
+      "price": 125000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/3-luxury-bedside.webp",
       "title": "Luxurious White Geometric Bedroom Suite",
       "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Trim.",
-      "price": 185000,
-      "review": "5star"
+      "price": 185000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/4-bedroom-set.webp",
       "title": "Luxurious White Geometric Suite",
       "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Metallic Trim.",
-      "price": 125000,
-      "review": "5star"
+      "price": 125000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/5-bedroom-set.png",
       "title": "Modern Earth-Tone Bedroom Suite",
       "description": "Contemporary Master Suite with Rust Velvet King Bed and Geometric Gold Wall Art.",
-      "price": 165000,
-      "review": "5star"
+      "price": 165000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/6-sofabed-set.jpg",
       "title": "Luxurious White Suite",
       "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Metallic Trim.",
-      "price": 135000,
-      "review": "5star"
+      "price": 135000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/7-Modern-Luxury-Bedroom-Design.jpg",
       "title": "Master Suite with Vertical Channel Tufting",
       "description": "Modern Vertical Channel-Tufted King Size Bed with Matching Upholstered Bench.",
-      "price": 110500,
-      "review": "5star"
+      "price": 110500
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/8-romantic-bedroom.jpg",
       "title": "Modern Royal & Cream Master Suite",
       "description": "Modern Purple Velvet Paneled King Bed with Cream Tufted Bench.",
-      "price": 115000,
-      "review": "5star"
+      "price": 115000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/9-bedset-luxury-set.webp",
       "title": "Luxurious White Geometric Bedroom Suite",
       "description": "Ornate Hand-Carved Royal Teak Wood Bedroom Suite in Ivory and Gold Leaf.",
-      "price": 225000,
-      "review": "5star"
+      "price": 225000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/10-luxury-bedroom-set.jpg",
       "title": "Luxurious White Geometric Bedroom Suite",
       "description": "Luxury Modern Geometric Upholstered King Size Bed with Gold Metallic Trim.",
-      "price": 185000,
-      "review": "5star"
+      "price": 185000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/11-sofa-bed.webp",
       "title": "Premium Quality Sofa",
       "description": "Luxo Nation Luxury Sofa Bed Modern Design & Premium Quality Sofa",
-      "price": 123000,
-      "review": "5star"
+      "price": 123000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/12-sofabed-Bedroom.jpg",
       "title": "Modern Charm sofa",
       "description": "Contemporary Bedrooms with Mid-Century Modern Charm: A Perfect Fusion of Style",
-      "price": 215000,
-      "review": "5star"
+      "price": 215000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/13-sofabed-large-bedroom.jpg",
       "title": "Mid-Century sofa",
       "description": "Color Palettes in Mid-Century Bedroom Designs",
-      "price": 205000,
-      "review": "5star"
+      "price": 205000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/14-sofabed-luxury.jpg",
       "title": "Open Concept Bedroom sofa",
       "description": "Serene-Open-Concept-Bedroom-with-Mid-Century-Minimalism",
-      "price": 145000,
-      "review": "5star"
+      "price": 145000
+      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Sofabed/15-sofabed-luxury.webp",
       "title": " Double Size sofa",
       "description": "Wooden Platform Sofa Bed, Double Size, Contemporary Style",
-      "price": 132000,
-      "review": "5star"
+      "price": 132000
+      
     }
   ],
   "dining": [
@@ -225,113 +209,112 @@
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/1-%20dining-table.jpg",
         "title": "Wooden dining table set",
         "description": "Italian 6-Seater Modern Wooden Dining Table Set",
-        "price": 132000,
-        "review": "5star"
+        "price": 132000
+        
       },
       {
         "img":"https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/2-luxury-glass-dining.avif",
         "title": "8-Seater designer dining table",
         "description": "8-seater designer dining table and bevelled wall mirror",
-        "price": 122000,
-        "review": "5star"
+        "price": 122000
+        
       },
       {
         "img":"https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/3-modern-dining-area-with-wooden-accents.avif",
         "title": "Round wooden dining table",
         "description": "Boho dining room with round wooden dining table and mint green crockery unit",
-        "price": 111000,
-        "review": "5star"
+        "price": 111000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/4-luxury-dining-setup-with-elegant-chairs.avif",
         "title": "Marble dining table set",
         "description": "6-Seater dining room with marble dining table and wooden flooring",
-        "price": 125000,
-        "review": "5star"
+        "price": 125000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/5-modern-luxury-dining-room-decor.avif",
         "title": "Dining chairs and fluted wall",
         "description": "Dining room with earthy dining chairs and fluted wall",
-        "price": 122000,
-        "review": "5star"
+        "price": 122000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/6-elegant-dining-space-with-modern-decor.avif",
         "title": "Black dining table and grey plush chairs",
         "description": "Modern dining room with black marble dining table and grey plush chairs",
-        "price": 118000,
-        "review": "5star"
+        "price": 118000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/7-contemporary-dining-space-with-minimalist-touch.avif",
         "title": "Marble dining table",
         "description": "Modern dining room with marble dining table white and green chairs",
-        "price": 127000,
-        "review": "5star"
+        "price": 127000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/8-modern-dining-area-with-checkered-chairs.avif",
         "title": "Dining table top and checkered chairs",
         "description": "Modern 4-seater dining room with marble dining table top and checkered chairs",
-        "price": 113000,
-        "review": "5star"
+        "price": 113000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/9-elegant-teak-wood-dining-room.avif",
         "title": "Wooden furniture and cane sideboard",
         "description": "Boho chic dining room with wooden furniture and cane sideboard",
-        "price": 124000,
-        "review": "5star"
+        "price": 124000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/10-elegant-dining-table-arrangement.avif",
         "title": "8-Seater dining room with cream chairs",
         "description": "Mid-century modern 8-seater dining room with cream chairs",
-        "price": 132000,
-        "review": "5star"
+        "price": 132000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/11-luxury-dining-room-with-wooden-accents.avif",
         "title": "Dining room with dual tone chairs",
         "description": "Indian 6-seater dining room with dual tone chairs and open shelves",
-        "price": 126000,
-        "review": "5star"
+        "price": 126000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/12-modern-glass-dining-setup-with-chic-decor.avif",
         "title": "Dining room with chairs",
         "description": "Modern minimal dining room with chairs with metal frame and arch walls",
-        "price":115500,
-        "review": "5star"
+        "price":115500        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/13-elegant-luxury-dining-room-design.avif",
         "title": "Oval wooden table and black chairs",
         "description": "Modern contemporary dining room with oval wooden table and black chairs",
-        "price": 142000,
-        "review": "5star"
+        "price": 142000
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/14-modern-wooden-dining-room-setup.avif",
         "title": " Dining room with wooden dining table",
         "description": "Transitional dining room with wooden dining table and victorian style crockery unit",
-        "price": 133500,
-        "review": "5star"
+        "price": 133500
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/15-luxury-rectangular-dining-setup.avif",
         "title": "Indian modern 6-seater dining Table",
         "description": "Indian modern 6-seater dining room with mustard chairs and patterned",
-        "price": 136500,
-        "review": "5star"
+        "price": 136500
+        
       },
       {
         "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/Dining/16-modern-luxury-dining-room-design.avif",
         "title": "Marble dining table and wall mirror",
         "description": "Modern minimal dining room with marble dining table and wall mirror paneling",
-        "price": 128500,
-        "review": "5star"
+        "price": 128500
+        
       }
   ],
   "office": [
@@ -339,106 +322,91 @@
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/1-office-chair.webp",
       "title": "High Back Chair",
       "description": "Moon Luxury High Back Chair",
-      "price": 15840,
-      "review": "5star"
+      "price": 15840     
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/2-office-chair-gray.jpg",
       "title": "Ergonomic Office Chair",
       "description": "Jupiter Superb High Back Evolutionary Ergonomic Office Chair (Grey)",
-      "price": 14500,
-      "review": "5star"
+      "price": 14500      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/3-%20office-chair.webp",
       "title": "Office Chair With Aluminum Base - Blue",
       "description": "Emilia Modern Upholstered Adjustable Office Chair With Aluminum Base - Blue",
-      "price": 15500,
-      "review": "5star"
+      "price": 15500      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/4-office-chair.webp",
       "title": "Luxuri Office Chair Kave",
       "description": "Office Chair Kave Home Madai",
-      "price": 15900,
-      "review": "5star"
+      "price": 15900      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/5-office-chairConfident_HB.webp",
       "title": "Mesh Office Chair",
       "description": "Confidant High Back Mesh Office Chair",
-      "price": 15400,
-      "review": "5star"
+      "price": 15400      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/6-office-chairtransform-prime.webp",
       "title": "Prime High Back chair",
       "description": "Transform Prime High Back Mesh Office Chair",
-      "price": 16500,
-      "review": "5star"
+      "price": 16500      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/7-classic-highback-office-chair.webp",
       "title": "Transform Classic High Back chair",
       "description": "Transform Classic High Back Mesh Office Chair",
-      "price": 15300,
-      "review": "5star"
+      "price": 15300      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/8-midback-office-chair.webp",
       "title": "Mid back mesh office chair",
       "description": "Empower Mid Back Mesh Office Chair",
-      "price": 14700,
-      "review": "5star"
+      "price": 14700      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/9-Gavisco-product-office-chair.webp",
       "title": "U-Sit mid back office chair",
       "description": "U-Sit Mid Back Minimalist Staff Office Chair",
-      "price": 14600,
-      "review": "5star"
+      "price": 14600      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/10-orange-office-chair%20(1).jpg",
       "title": "Professional Orange Executive Desk Chair",
       "description": " Orange Executive Office Chair Adjustable Leather Mid Back Swivel Office Desk Chair",
-      "price": 16800,
-      "review": "5star"
+      "price": 16800      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/11-office-chair.jpg",
       "title": "Bezus Ergonomic High office chair",
       "description": "Bezus Ergonomic High Back Mesh Office Chair (Grey)",
-      "price": 14500,
-      "review": "5star"
+      "price": 14500     
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/12-office-chair-modern.jpg",
       "title": "Leather office chair in modern workspace",
       "description": "Luxury leather office chair in modern workspace Pro",
-      "price": 16900,
-      "review": "5star"
+      "price": 16900      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/13-black-leather-office-chair.jpg",
       "title": "Black-leather-office-chair",
       "description": "black-leather-office-chair-in-modern-business-setting",
-      "price": 14300,
-      "review": "5star"
+      "price": 14300      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/14-office-chair.jpg",
       "title": "Sleek desk and ergonomic chair",
       "description": "Modern office interior featuring sleek desk and ergonomic chair",
-      "price": 16700,
-      "review": "5star"
+      "price": 16700      
     },
     {
       "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/office/15-posture-chair.webp",
       "title": "Luxurious office chair",
       "description": "Luxurious Lobby with Contemporary Furnishings and Lush Greenery",
-      "price": 17800,
-      "review": "5star"
+      "price": 17800      
     }
   ]
 }
