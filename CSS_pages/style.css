@@ -114,6 +114,7 @@ body {
   transition: 0.4s;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   margin-top: 6rem;
   padding: 2rem;
@@ -571,16 +572,17 @@ h3 {
   width: 25rem;
   position: relative;
   height: 25rem;
-  background-color: rgb(212, 207, 207);
+  background-color: var(--black);
   overflow: hidden;
 }
 
 .section07 .office_card_box .office_card .img_1 {
-  width: 24rem;
-  height: 23rem;
+   width: 14rem;
+  height: 14rem;
+  object-fit: cover;
   position: absolute;
-  right: 56%;
-  bottom: 54%;
+  right: 54%;
+  bottom: 53%;
   transform: skewY(5deg) skewX(5deg);
 }
 
@@ -595,11 +597,12 @@ h3 {
 }
 
 .section07 .office_card_box .office_card .img_2 {
-  width: 24rem;
-  height: 23rem;
+   width: 14rem;
+  height: 14rem;
+  object-fit: cover;
   position: absolute;
   transform: skewY(-3deg) skewX(-5deg);
-  left: 52%;
+  left: 51%;
   bottom: 52%;
 }
 
@@ -614,12 +617,13 @@ h3 {
 }
 
 .section07 .office_card_box .office_card .img_3 {
-  width: 24rem;
-  height: 23rem;
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
   position: absolute;
   transform: skewY(-3deg) skewX(-5deg);
-  top: 53%;
-  right: 56%;
+  top: 51%;
+  right: 54%;
 }
 
 .section07 .office_card_box .office_card .img_3:hover {
@@ -633,12 +637,13 @@ h3 {
 }
 
 .section07 .office_card_box .office_card .img_4 {
-  width: 24rem;
-  height: 23rem;
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
   position: absolute;
   transform: skewY(5deg) skewX(5deg);
-  left: 52%;
-  top: 55%;
+  left: 51%;
+  top: 52%;
 }
 
 .section07 .office_card_box .office_card .img_4:hover {
