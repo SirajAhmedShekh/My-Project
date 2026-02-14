@@ -11,6 +11,11 @@ p,
 h3 {
   color: var(--black);
   font-style: italic;
+  cursor: pointer;
+}
+
+p,h1,h2,h3{
+  cursor: pointer;
 }
 
 h2 {
@@ -35,7 +40,7 @@ body {
 }
 .card_container {
   width: 100%;
-  padding-top: 3rem;
+  padding: 3rem 0;
   background-color: var(--gray);
 }
 
@@ -172,6 +177,7 @@ h3 {
 .section03 {
   width: 100%;
   height: auto;
+  padding: 3rem 0;
 }
 
 .detail_1 {
@@ -179,7 +185,7 @@ h3 {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-  padding: 5rem 0 5rem 0;
+  padding: 0rem;
 }
 
 .detail_1 .img_div {
@@ -254,6 +260,13 @@ h3 {
   }
 }
 
+/* === section 04 ===  */
+
+.section04 {
+  width: 100%;
+  padding: 1rem 0;
+}
+
 /* === section 05 ===  */
 
 .detail_2 {
@@ -261,7 +274,7 @@ h3 {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 0;
 }
 
 .detail_2 .img_div_2 {
@@ -342,11 +355,9 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--gray);
-  margin: 2rem 0;
 }
 
 .section06 h1 {
-  margin-bottom: 2rem;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
 }
 
@@ -369,6 +380,10 @@ h3 {
   align-items: center;
   margin-bottom: 5rem;
   background-color: var(--gray);
+}
+
+.section06 .card_container .card_box_2 {
+  margin-bottom: 0rem;
 }
 
 .section06 .card_container .card {
@@ -553,31 +568,46 @@ h3 {
 
 .section07 {
   width: 100%;
-  padding: 10rem 0rem;
-  /* border: 2px solid red; */
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section07 h1 {
+  margin-bottom: 2rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+}
+
+.section07 h1 span {
+  color: var(--golden-hour);
+  margin-left: 15px;
+  font-family: mv boli;
+  font-size: 38px;
+  font-weight: bold;
 }
 
 .section07 .office_card_box {
   width: 100%;
   margin: 0px auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-content: center;
   justify-items: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .section07 .office_card_box .office_card {
-  /* border: 2px solid rgb(3, 6, 196); */
   width: 25rem;
   position: relative;
   height: 25rem;
-  background-color: var(--black);
+  background-color: transparent;
   overflow: hidden;
 }
 
 .section07 .office_card_box .office_card .img_1 {
-   width: 14rem;
+  width: 14rem;
   height: 14rem;
   object-fit: cover;
   position: absolute;
@@ -597,7 +627,7 @@ h3 {
 }
 
 .section07 .office_card_box .office_card .img_2 {
-   width: 14rem;
+  width: 14rem;
   height: 14rem;
   object-fit: cover;
   position: absolute;
@@ -654,4 +684,88 @@ h3 {
   z-index: 1;
   transition: all 0.8s ease-in-out;
   transform: skewY(0deg) skewX(0deg);
+}
+
+.section07 .office_detail {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.section07 .office_detail .image_box {
+  width: 100%;
+  height: 35rem;
+  position: relative;
+}
+
+.section07 .office_detail .image_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.section07 .office_detail .image_box .description {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.5rem;
+  top: 0%;
+}
+
+.section07 .office_detail .image_box:hover .description h1 {
+  transition: all 1s linear;
+  left: 0rem;
+}
+
+.section07 .office_detail .image_box .description h1:hover {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.596);
+  color: var(--white);
+  transition: all 0.3s linear;
+}
+
+.section07 .office_detail .image_box .description h1 {
+  position: relative;
+  left: -95rem;
+}
+
+
+.section07 .office_detail .image_box .description p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+  position: relative;
+  right: -95rem;
+}
+
+.section07 .office_detail .image_box:hover .description p {
+  transition: all 1s linear;
+  right: 0rem;
+}
+
+.section07 .office_detail .image_box .description p:hover {
+  transition: all 0.3s linear;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.596);
+  color: var(--white);
+  line-height: 2.3rem;
+}
+
+
+/* === FOOTER ===  */
+
+.container{
+  width: 100%;
+  height: 70vh;
+  background:
+    linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)),
+    url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+  background-blend-mode: overlay;
+  background-size: cover;
+  margin-bottom: 3rem;
 }

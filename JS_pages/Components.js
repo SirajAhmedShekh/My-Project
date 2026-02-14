@@ -123,6 +123,10 @@ export const navStyle = () => {
   transform: scaleX(1);
 }
 
+.menu li a:focus {
+  color: var(--golden-hour);
+}
+
 .menu a:hover {
   color: var(--golden-hour);
 }
