@@ -72,13 +72,18 @@ export const navStyle = () => {
 } 
 
 .logo {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: var(--black);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
 }
 
 .logo span {
   color: var(--golden-hour);
+  }
+  
+  .logo span i{
+    margin:0px 2px;
 }
 
 .menu {
@@ -178,7 +183,7 @@ export const navStyle = () => {
 }
 
 .search {
-  padding: 6px 10px;
+  padding: 6px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }

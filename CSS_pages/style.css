@@ -76,7 +76,6 @@ body {
 .card_container .card_box .card {
   width: 22rem;
   height: 24rem;
-  /* border-radius: 50px 0 50px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +101,6 @@ body {
 .card_container .card_box .card img {
   width: 22rem;
   height: 24rem;
-  /* border-radius: 50px 0 50px 0; */
   object-fit: cover;
   object-position: center;
   z-index: 1;
@@ -117,7 +115,6 @@ body {
   height: 90%;
   position: absolute;
   text-align: center;
-  /* border-radius: 15px; */
   top: 25%;
   transition: 0.4s;
   display: flex;
@@ -134,7 +131,6 @@ h3 {
 }
 
 .card_container .card_box .card:hover .card_info {
-  /* border-radius: 50px 0 50px 0; */
   animation: show-card 1s forwards;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.836);
@@ -421,7 +417,7 @@ h3 {
   height: 19rem;
   z-index: 1;
   animation: remove-card 0.8s forwards;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 0px 0px 10px;
   object-fit: cover;
 }
 
@@ -826,12 +822,14 @@ footer .container .box_1 .conection .search_box input:focus {
 }
 
 footer .container .box_1 .conection .search_box button {
-  font-size: 17px;
-  padding: 8px 20px;
+  font-size: 18px;
+  padding: 7px 20px;
   font-weight: 600;
-  color: rgb(46, 44, 44);
+  color: rgb(70, 68, 68);
   background-color: var(--golden-hour);
   border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
 footer .container .box_1 .follow_box {
@@ -871,7 +869,7 @@ footer .container .box_1 .follow_box .icon i{
   border: 2px solid var(--golden-hour);
 }
 
-hr{
+footer .container .box_1 .follow_box .icon i:hover{
   color: var(--golden-hour);
 }
 
@@ -887,14 +885,21 @@ footer .container .box_2{
 }
 
 footer .container .box_2 .inner_box{
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--golden-hour);
+  /* border: 2px solid red; */
 }
 
 footer .container .box_2 .inner_box h1{
   margin-bottom: 0.5rem;
+}
+
+footer .container .box_2 .inner_box h1:hover{
+  color: var(--golden-hour);
 }
 
 footer .container .box_2 .inner_box ul{
@@ -906,8 +911,14 @@ footer .container .box_2 .inner_box ul{
 footer .container .box_2 .inner_box li{
   line-height: 2.3rem;
   font-size: 18px;
+  cursor: pointer;
+}
+
+footer .container .box_2 .inner_box li:hover{
+  color: var(--golden-hour);
 }
 
 footer .container .box_2 .inner_box .contact li i{
   margin:0 0.5rem 0 0;
 }
+
