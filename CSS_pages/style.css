@@ -791,7 +791,8 @@ footer .container .box_1 .conection {
 }
 
 footer .container .box_1 .conection h1 {
-  font-family: mv boli;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
   font-size: 50px;
   color: var(--golden-hour);
   margin-bottom: 1rem;
