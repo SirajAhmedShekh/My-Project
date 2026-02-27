@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/CSS_pages/About.css">
 </head>
+
 <body>
 
     <!-- HEADER PART -->
-  <nav>
-  </nav>
+    <nav>
+    </nav>
     <main>
         <!--=== section 01 ===-->
 
@@ -21,6 +23,8 @@
             <h1>Furniture for <span>Every Room</span></h1>
             <p>Discover stylish and affordable pieces for your entire home</p>
         </div>
+
+        <!--=== section 02 ===-->
 
         <div class="section02">
             <div class="box">
@@ -52,17 +56,33 @@
                 <button>Shop Home Office</button>
             </div>
         </div>
-        
+
+        <!--=== section 03 ===-->
+
+        <div class="section03">
+            <div class="box_1">
+                <h2>Our Story</h2>
+                <p>Founded in 2026, our mission is to bring stylish, high-quality furniture to every home at affordable prices. We partner with skilled craftsmen and designers to create timeless pieces that fit every style and budget.</p>
+            </div>
+            <div class="box_2">
+                <img src="../Utils/1-about-couple-furniture-shopping.webp" alt="">
+            </div>
+        </div>
+
     </main>
+
+    <footer class="footer">
+    </footer>
 </body>
 
 <script type="module">
-  import { navBar, navStyle } from "../JS_pages/Components.js";
+    import { navBar, navFooterStyle, fooTer } from "../JS_pages/Components.js";
 
-  document.querySelector('nav').innerHTML = navBar();
-  let styleTag = document.createElement("style");
-  styleTag.textContent = navStyle();
-  document.head.append(styleTag);
+    document.querySelector('nav').innerHTML = navBar();
+    document.querySelector('.footer').innerHTML = fooTer();
+    let styleTag = document.createElement("style");
+    styleTag.textContent = navFooterStyle();
+    document.head.append(styleTag);
 </script>
 
 </html>
