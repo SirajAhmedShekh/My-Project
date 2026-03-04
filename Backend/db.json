@@ -8,7 +8,7 @@
   ],
   "living": [
     {
-      "img": "https://github.com/SirajAhmedShekh/My-Project/blob/main/Utils/living/1-leaving-pieces-3-seat-l.jpg?raw=true",
+      "img": "../Utils/living/1-leaving-pieces-3-seat-l.jpg",
       "title": "L Shape Chair Sofa",
       "description": "2 Pieces 3 Seat L Shape Couch with Ottoman and Accent Chair Sofa Set Polyester Fabric for Living Room, Green",
       "price": 42000      
