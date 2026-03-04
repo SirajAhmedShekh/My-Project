@@ -333,15 +333,17 @@ footer .container .box_1 .follow_box .icon{
     font-size: 25px;
     border-radius:50% ;
     align-content: center;
-    background-color: #000;
+    background-color:var(--black);
     box-shadow: 0px 0px 5px 1px grey;
     border: 2px solid var(--golden-hour);
     transition: 0.3s;
     }
     
     footer .container .box_1 .follow_box .icon i:hover{
-      color: var(--golden-hour);
+      background-color: var(--golden-hour);
       transform: scale(1.3);
+      border:none;
+      color:var(--black);
 }
 
 footer .container .box_2{
