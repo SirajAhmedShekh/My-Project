@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Sans-Serif;
+}
+
+h1,
+h2 {
+  color: var(--black);
+  font-style: italic;
+  cursor: pointer;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+  font-family: "Playfair Display", serif;
+}
+
+h3,p{
+    opacity: 0.6;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #f4f4f4;
+  --golden-hour: #f1b555;
+  --antique-brown: #9b281a;
+}
+
+
+.cart_container{
+    width: 100%;
+    background-color: var(--gray);
+    border: 2px solid #f1b555;
+}
+
+.cart_container .container_child_1{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid ; */
+}
+
+.cart_container .container_child_2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.2rem;
+}
+
+.cart_container .container_child_2 .product_box{
+    width: 60%;
+    /* height: 8rem; */
+    /* border: 2px solid greenyellow; */
+}
+
+.cart_container .container_child_2 .product_box .heading_box{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: 1px dashed rgb(161, 158, 158);
+    color: var(--black);
+}
+
+h3:hover,i:hover{
+    color: var(--golden-hour);
+    cursor: pointer;
+}
+
+.cart_container .container_child_2 .product_box .heading_box .quantity{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.cart_container .container_child_2 .product_box .cart_box{
+    width: 100%;
+    margin: 1.9rem 0;
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding:0 0.3rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 1px rgb(185, 185, 185);
+    /* border: 2px solid rgb(182, 181, 181); */
+    /* border: 2px solid rgb(255, 0, 212); */
+    
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .image_title{
+    width: 55%;
+    height: 8.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .image_title img{
+    width: 8rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .image_title img:hover{
+    transform: scale(1.9);
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .image_title .price_title{
+    line-height: 1.5rem;
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .total_count{
+    width: 40%;
+    height: 8.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 1rem; */
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .total_count .button{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(206, 205, 205);
+    overflow: hidden;
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .total_count .button button{
+    font-size: 2rem;
+    padding: 0rem 0.8rem;
+    border: none;
+    background-color:rgb(206, 205, 205) ;
+
+}
+
+button:hover{
+    color: var(--golden-hour);
+}
+
+.cart_container .container_child_2 .product_box .cart_box .cart_list .total_count .button span{
+    padding: 0 1rem;
+}
+
+
+.cart_container .container_child_2 .cart_price_box{
+    width: 30%;
+    /* height: 8rem; */
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid green;
+}
+
+.cart_container .container_child_2 .cart_price_box .total_price{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+     border-bottom: 1px dotted rgb(161, 158, 158);
+}
+
+.cart_container .container_child_2 .cart_price_box button{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--gray);
+    background-color: var(--black);
+}
+
+.cart_container .container_child_2 .cart_price_box button:hover{
+    background-color: var(--golden-hour);
+    color: var(--black);
+}

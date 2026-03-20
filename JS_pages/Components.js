@@ -4,36 +4,35 @@
 export const navBar = () => {
 
   return `
-    <header class="navbar">
-    <div class="logo">Furn<span>it<i class="fa-solid fa-couch"></i>re</span></div>
+    <div class ="navbar">
+          <div class="logo">Furn<span>it<i class="fa-solid fa-couch"></i>re</span></div>
+          <div>
+            <ul class="menu">                   
+              <li><a href="../index.html">Home</a></li>
 
-    <nav>
-      <ul class="menu">                   
-        <li><a href="../index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Shop ▾</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../HTML_pages/Living.html">Living Room</a></li>
+                  <li><a href="#">Bedroom</a></li>
+                  <li><a href="#">Dining</a></li>
+                  <li><a href="#">Office</a></li>
+                </ul>
+              </li>
 
-        <li class="dropdown">
-          <a href="#">Shop ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Living Room</a></li>
-            <li><a href="#">Bedroom</a></li>
-            <li><a href="#">Dining</a></li>
-            <li><a href="#">Office</a></li>
-          </ul>
-        </li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="../HTML_pages/About.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
 
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Offers</a></li>
-        <li><a href="../HTML_pages/About.html">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="nav-right">
-      <input type="text" placeholder="Search furniture..." class="search">
-      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-      <a href="#"><i class="fa-solid fa-user"></i></a>
-    </div>
-  </header>
+          <div class="nav-right">
+            <input type="text" placeholder="Search furniture..." class="search">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+  </div>
     `
 };
 
@@ -42,6 +41,7 @@ export const navFooterStyle = () => {
 
   return `
     .navbar {
+    margin-bottom: 200px;
     width:100%;
   display: flex;
   align-items: center;
@@ -70,8 +70,7 @@ export const navFooterStyle = () => {
     background-color: var(--gray);
      box-shadow:0 0 10px var(--black);
      position: absolute;
-  }
-     
+  }   
   } 
 
 .logo {
@@ -214,36 +213,45 @@ color:var(--black);
 
 
 footer {
+ width: 100%;
+ height:90vh;
+  overflow: hidden;
+   position: relative;
+  }
+
+  .footer .footer_video{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  position: relative;
-}
-
-footer h1{
- color: var(--white);
-  font-style:normal;
-}
-
-footer .container {
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  }
+  
+  footer h1{
+    color: var(--white);
+    font-style:normal;
+    }
+    
+    footer .container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 0%;
   padding-top:2.5rem;
   background-color: rgba(0, 0, 0, 0.918);
 }
 
 footer .container .box_1 {
   width: 90%;
-  height: 40%;
+  height: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--gray);
   padding: 2.5rem;
-
   border-top: 1px solid var(--golden-hour);
   border-bottom: 1px solid var(--golden-hour);
 
@@ -401,9 +409,11 @@ footer .container .box_2 .inner_box .contact li i{
 
 export const fooTer = () => {
   return `
-    <video loop muted autoplay style="width: 100%; height: 95vh; object-fit: cover;">
+  
+    <video loop muted autoplay class="footer_video">
     <source src="../Utils/Footer/Video_Generation_From_Images.mp4">
   </video>
+
     <div class="container">
       <div class="box_1">
         <div class="conection">
