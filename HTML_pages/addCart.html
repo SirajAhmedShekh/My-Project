@@ -12,6 +12,10 @@
 </head>
 
 <body>
+
+     <nav>
+    </nav>
+
     <div class="cart_container">
         <div class="container_child_1">
             <h1>Shopping Cart</h1>
@@ -32,58 +36,16 @@
                             <img src="../Utils/living/1-leaving-pieces-3-seat-l.jpg" alt="image">
                             <div class="price_title">
                                 <p>Luxurious White Geometric Bedroom Suite</p>
-                                <p>₹ 145000</p>
+                                <p>₹<span>145000</span></p>
                             </div>
                         </div>
                         <div class="total_count">
                             <div class="button">
                                 <button class="descrease">-</button>
-                                <span>10</span>
+                                <span>1</span>
                                 <button class="increase">+</button>
                             </div>
-                            <p>₹ <span>145000</span></p>
-                            <a><i class="fa-solid fa-trash-arrow-up"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="cart_list">
-                        <div class="image_title">
-                            <img src="../Utils/living/5-leavingset.jpg" alt="image">
-                            <div class="price_title">
-                                <p>Luxurious White Geometric Bedroom Suite</p>
-                                <p>₹ 145000</p>
-                            </div>
-                        </div>
-
-
-                        <div class="total_count">
-                            <div class="button">
-                                <button class="descrease">-</button>
-                                <span>10</span>
-                                <button class="increase">+</button>
-                            </div>
-                            <p>₹ <span>145000</span></p>
-                            <a><i class="fa-solid fa-trash-arrow-up"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="cart_list">
-                        <div class="image_title">
-                            <img src="../Utils/living/12-leaving-luxury-modern-sofa.jpg" alt="image">
-                            <div class="price_title">
-                                <p>Luxurious White Geometric Bedroom Suite</p>
-                                <p>₹ 145000</p>
-                            </div>
-                        </div>
-
-
-                        <div class="total_count">
-                            <div class="button">
-                                <button class="descrease">-</button>
-                                <span>10</span>
-                                <button class="increase">+</button>
-                            </div>
-                            <p>₹ <span>145000</span></p>
+                            <p>₹<span>145000</span></p>
                             <a><i class="fa-solid fa-trash-arrow-up"></i></a>
                         </div>
                     </div>
@@ -96,26 +58,45 @@
                 <h3>Cart Total</h3>
                 <div class="total_price">
                     <p>Total</p>
-                    <p>₹ <span>145000</span></p>
+                    <p>₹<span>145000</span></p>
+                </div>
+                
+                <div class="total_price">
+                    <p>Tax <span>18%</span></p>
+                    <p>₹<span>145000</span></p>
                 </div>
                 <div class="total_price">
-                    <p>Total</p>
-                    <p>₹ <span>145000</span></p>
+                    <p>Delivery Charge</p>
+                    <p>₹<span>500</span></p>
                 </div>
                 <div class="total_price">
-                    <p>Total</p>
-                    <p>₹ <span>145000</span></p>
+                    <p>Grand Total</p>
+                    <p>₹<span>145000</span></p>
+                </div> <br>
+                <div class="coupon_input">
+                    <input type="text" placeholder="Enter Coupon Code">
+                    <button>Apply</button>
                 </div>
-                <div class="total_price">
-                    <p>Total</p>
-                    <p>₹ <span>145000</span></p>
-                </div> <br><br>
 
                 <button>Proceed to checkout</button>
             </div>
         </div>
 
     </div>
+
+    <footer class="footer">
+    </footer>
 </body>
+<script src="../JS_pages/Living.js"></script>
+
+<script type="module">
+    import { navBar, navFooterStyle, fooTer } from "../JS_pages/Components.js";
+
+    document.querySelector('nav').innerHTML = navBar();
+    document.querySelector('.footer').innerHTML = fooTer();
+    let styleTag = document.createElement("style");
+    styleTag.textContent = navFooterStyle();
+    document.head.append(styleTag);
+</script>
 
 </html>

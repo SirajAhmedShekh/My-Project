@@ -29,7 +29,7 @@ export const navBar = () => {
 
           <div class="nav-right">
             <input type="text" placeholder="Search furniture..." class="search">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../HTML_pages/addCart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <a href="#"><i class="fa-solid fa-user"></i></a>
           </div>
   </div>

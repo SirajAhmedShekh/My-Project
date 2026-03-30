@@ -1,7 +1,28 @@
 let currentPage = 1;
 let itemsPerPage = 8;
 
-let livingApi= 'https://api-8q6p.onrender.com/living';
+
+let livingApi = 'https://api-8q6p.onrender.com/living';
+
+let cartApi = 'https://api-8q6p.onrender.com/addToCart';
+
+// const catrApiFunc = async() => {
+//      try {
+//         let res = await fetch(cartApi,{
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify(objName)
+//         })
+//         let cartData = await res.json();
+//         console.log("🚀 ~ cartData:", cartData);
+        
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// catrApiFunc();
 
 
 const ApiFunc = async () => {
@@ -9,7 +30,9 @@ const ApiFunc = async () => {
         let res = await fetch(livingApi)
         let data = await res.json();
         console.log("🚀 ~ data:", data);
-        
+        // let machId = data.find((item) => item.id === id)
+        // console.log("🚀 ~ machId:", machId);
+
         livingFunc(data)
     } catch (error) {
         console.log(error);
@@ -18,18 +41,19 @@ const ApiFunc = async () => {
 
 
 const livingFunc = (value) => {
-let parent_child = document.querySelector('.parent_child')
-parent_child.innerHTML = ""
+    console.log("🚀 ~ value:", value);
+    let parent_child = document.querySelector('.parent_child')
+    parent_child.innerHTML = ""
 
-let start = (currentPage - 1) * itemsPerPage
-let end = start + itemsPerPage
+    let start = (currentPage - 1) * itemsPerPage
+    let end = start + itemsPerPage
 
-let paginatedData = value.slice(start, end)
+    let paginatedData = value.slice(start, end)
 
-paginatedData.forEach((el) => {
-    let card = document.createElement("div");
-    card.className = "card"
-    card.innerHTML = `
+    paginatedData.forEach((el) => {
+        let card = document.createElement("div");
+        card.className = "card"
+        card.innerHTML = `
                         <img src=${el.img} alt="image">
                         <div class="card_info">
                             <h2>${el.title}</h2>
@@ -46,9 +70,12 @@ paginatedData.forEach((el) => {
                         </div>
             
     `
-    parent_child.append(card)
+        parent_child.append(card)
 
-})
+    })
+
+    
+
     createPagination(value)
 }
 
@@ -56,11 +83,11 @@ paginatedData.forEach((el) => {
 const createPagination = (data) => {
 
     let pageContainer = document.querySelector('.pagination')
-    pageContainer.innerHTML=""
+    pageContainer.innerHTML = ""
 
     let totalPages = Math.ceil(data.length / itemsPerPage)
 
-    for(let i = 1 ; i <= totalPages; i++){
+    for (let i = 1; i <= totalPages; i++) {
         let btn = document.createElement('button')
         btn.innerText = i
 
@@ -70,7 +97,7 @@ const createPagination = (data) => {
         }
         pageContainer.append(btn)
     }
-    
+
 
 }
 

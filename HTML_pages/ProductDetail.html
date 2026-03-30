@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductDetail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS_pages/ProductDetail.css">
+</head>
+
+<body>
+
+     <nav>
+    </nav>
+
+    <main>
+        <div class="container1">
+            <div class="image_box">
+                <img src="../Utils/living/10-leaving-rugs_blog.webp" alt="image">
+            </div>
+
+            <div class="detail_container">
+                <div class="product_detail">
+                    <h2>Contemporary Master Bedroom Suite</h2>
+                    <p>Modern King Size Bed with Vertical Channel-Tufted Headboard and Matching Bench.</p>
+                    <h4>₹ <span>145000</span></h4>
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+                <div class="delivery_detail">
+                    <h2>IN-HOME DELIVERY</h2>
+                    <P>In stock and ready for delivery to PIN Code <span>104235</span></P>
+                    <ul>
+                        <li>Placement in the room of your choice</li>
+                        <li>Assembly & removal of packaging</li>
+                        <li>Order multiple items, pay one flat rate delivery fee</li>
+                    </ul>
+                </div>
+                <div class="quantity">
+                    <div class="button">
+                        <button class="descrease">-</button>
+                        <span>10</span>
+                        <button class="increase">+</button>
+                    </div>
+                    <h4>₹ <span>145000</span></h4>
+                </div>
+                <button class="cart_btn">ADD TO CART</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+
+</body>
+
+<script type="module">
+    import { navBar, navFooterStyle, fooTer } from "../JS_pages/Components.js";
+
+    document.querySelector('nav').innerHTML = navBar();
+    document.querySelector('.footer').innerHTML = fooTer();
+    let styleTag = document.createElement("style");
+    styleTag.textContent = navFooterStyle();
+    document.head.append(styleTag);
+</script>
+
+</html>
