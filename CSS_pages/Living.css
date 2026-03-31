@@ -86,7 +86,7 @@
   color: var(--golden-hour);
 }
 
-.parent .parent_child .card .card_info .review .card_btn {
+.parent .parent_child .card .card_info .review .view_Btn {
   padding: 5px 15px;
   margin-top: 2px;
   border-radius: 5px;
@@ -99,7 +99,7 @@
   box-shadow: 0px 0px 5px 1px var(--golden-hour);
 }
 
-.parent .parent_child .card .card_info .review .card_btn:hover {
+.parent .parent_child .card .card_info .review .view_Btn:hover {
   background-color: var(--golden-hour);
   color: var(--black);
   box-shadow: 0px 0px 4px 1px var(--black);

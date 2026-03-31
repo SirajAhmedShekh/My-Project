@@ -154,12 +154,12 @@ h3 {
 }
 
 .card_container .card_box .card .card_info .review .card_btn {
-  padding: 9px 19px;
+  padding: 8px 20px;
   margin-top: 1rem;
   border-radius: 5px;
   color: var(--black);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   outline: none;
   border: none;
   background-color: var(--gray);
@@ -168,7 +168,7 @@ h3 {
 
 .card_container .card_box .card .card_info .review .card_btn:hover {
   background-color: var(--golden-hour);
-  color: var(--black);
+  color: var(--white);
 }
 
 /* === section 03 ===  */
@@ -459,12 +459,10 @@ h3 {
 
 .section06 .card_container .card .card_info p {
   color: var(--white);
-  font-style: italic;
 }
 
 .section06 .card_container .card .card_info h2,
 .review i {
-  font-style: italic;
   color: var(--golden-hour);
 }
 
@@ -474,7 +472,7 @@ h3 {
   border-radius: 5px;
   color: var(--black);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   outline: none;
   border: none;
   background-color: var(--white);
@@ -483,7 +481,7 @@ h3 {
 
 .section06 .card_container .card .card_info .card_btn:hover {
   background-color: var(--golden-hour);
-  color: var(--black);
+  color: var(--white);
 }
 
 .section06 .img_container {

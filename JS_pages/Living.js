@@ -1,10 +1,11 @@
 let currentPage = 1;
 let itemsPerPage = 8;
 
+let parent_child = document.querySelector('.parent_child');
 
 let livingApi = 'https://api-8q6p.onrender.com/living';
 
-let cartApi = 'https://api-8q6p.onrender.com/addToCart';
+// let cartApi = 'https://api-8q6p.onrender.com/addToCart';
 
 // const catrApiFunc = async() => {
 //      try {
@@ -30,8 +31,7 @@ const ApiFunc = async () => {
         let res = await fetch(livingApi)
         let data = await res.json();
         console.log("🚀 ~ data:", data);
-        // let machId = data.find((item) => item.id === id)
-        // console.log("🚀 ~ machId:", machId);
+        
 
         livingFunc(data)
     } catch (error) {
@@ -41,8 +41,7 @@ const ApiFunc = async () => {
 
 
 const livingFunc = (value) => {
-    console.log("🚀 ~ value:", value);
-    let parent_child = document.querySelector('.parent_child')
+    // console.log("🚀 ~ value:", value);
     parent_child.innerHTML = ""
 
     let start = (currentPage - 1) * itemsPerPage
@@ -65,19 +64,29 @@ const livingFunc = (value) => {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star-half-stroke"></i><br>
-                                <button class="card_btn">Add to cart</button>
+                                <button class="view_Btn">View Details</button>
                             </div>
                         </div>
             
     `
-        parent_child.append(card)
+        parent_child.append(card);
 
-    })
+        const viewBtn = card.querySelector('.view_Btn');
 
-    
+        viewBtn.addEventListener("click", () => {
+            sessionStorage.setItem("viewProduct", JSON.stringify(el))
+            window.location.href = "../HTML_pages/ProductDetail.html"
+
+        });
+
+    });
 
     createPagination(value)
-}
+};
+
+
+
+
 
 
 const createPagination = (data) => {

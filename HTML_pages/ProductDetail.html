@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="../CSS_pages/ProductDetail.css">
 </head>
 
-<body>
+<body onload="productViewFunc()">
 
      <nav>
     </nav>
 
     <main>
-        <div class="container1">
-            <div class="image_box">
+        <div class="container">
+            <!-- <div class="image_box">
                 <img src="../Utils/living/10-leaving-rugs_blog.webp" alt="image">
             </div>
 
@@ -54,7 +54,7 @@
                     <h4>₹ <span>145000</span></h4>
                 </div>
                 <button class="cart_btn">ADD TO CART</button>
-            </div>
+            </div> -->
 
         </div>
     </main>
@@ -74,5 +74,7 @@
     styleTag.textContent = navFooterStyle();
     document.head.append(styleTag);
 </script>
+
+<script src="../JS_pages/ProductView.js"></script>
 
 </html>
