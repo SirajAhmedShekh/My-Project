@@ -4,34 +4,12 @@ let itemsPerPage = 8;
 let parent_child = document.querySelector('.parent_child');
 
 let livingApi = 'https://api-8q6p.onrender.com/living';
-
-// let cartApi = 'https://api-8q6p.onrender.com/addToCart';
-
-// const catrApiFunc = async() => {
-//      try {
-//         let res = await fetch(cartApi,{
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-//             body: JSON.stringify(objName)
-//         })
-//         let cartData = await res.json();
-//         console.log("🚀 ~ cartData:", cartData);
-        
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
-// catrApiFunc();
-
+let cartApi = 'https://api-8q6p.onrender.com/addToCart';
 
 const ApiFunc = async () => {
     try {
         let res = await fetch(livingApi)
         let data = await res.json();
-        console.log("🚀 ~ data:", data);
-        
 
         livingFunc(data)
     } catch (error) {
@@ -74,7 +52,7 @@ const livingFunc = (value) => {
         const viewBtn = card.querySelector('.view_Btn');
 
         viewBtn.addEventListener("click", () => {
-            sessionStorage.setItem("viewProduct", JSON.stringify(el))
+            sessionStorage.setItem("viewProduct", JSON.stringify({id: el.id}))
             window.location.href = "../HTML_pages/ProductDetail.html"
 
         });
@@ -83,11 +61,6 @@ const livingFunc = (value) => {
 
     createPagination(value)
 };
-
-
-
-
-
 
 const createPagination = (data) => {
 

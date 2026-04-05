@@ -1,22 +1,36 @@
+let livingApi = 'https://api-8q6p.onrender.com/living';
+let cartApi = 'https://api-8q6p.onrender.com/addToCart';
 
 const product = JSON.parse(sessionStorage.getItem("viewProduct"));
-// console.log("🚀 ~ product:", product.price);
+
+const detailsData = async () => {
+    try {
+        let res = await fetch(livingApi)
+        let productDetails = await res.json()
+
+        let matchProduct = productDetails.find((el) => el.id === product.id)
+        productViewFunc(matchProduct)
+    } catch (error) {
+        console.log("🚀 ~ error:", error);
+    }
+}
 
 
-const productViewFunc = () => {
-    
+const productViewFunc = (val) => {
+
     const viewProduct = document.querySelector(".container");
 
-    viewProduct.innerHTML = `
+    if (val) {                   //<= jab value tru
+        viewProduct.innerHTML = `
     <div class="image_box">
-                <img src=${product.img}>
+                <img src=${val.img} />
             </div>
 
             <div class="detail_container">
-                <div class="product_detail">
-                    <h2>${product.title}</h2>
-                    <p>${product.description}</p>
-                    <h4>₹ <span>${product.price}</span></h4>
+                <div class="val_detail">
+                    <h2>${val.title}</h2>
+                    <p>${val.description}</p>
+                    <h4>₹ <span class="price">${val.price}</span></h4>
                     <div class="review">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -37,15 +51,100 @@ const productViewFunc = () => {
                 </div>
                 <div class="quantity">
                     <div class="button">
-                        <button class="descrease">-</button>
-                        <span>10</span>
+                        <button class="descrease">-</button>                        
+                        <input type="text" value="1" id="count" />
                         <button class="increase">+</button>
                     </div>
-                    <h4>₹ <span>145000</span></h4>
+                    <h4>₹ <span id="total_price">${val.price}</span></h4>
                 </div>
                 <button class="cart_btn">ADD TO CART</button>
             </div>
     `
 
+        let addToCart = viewProduct.querySelector(".cart_btn")
+        console.log("🚀 ~ addToCart:", addToCart);
+        if(addToCart){
+            addToCart.addEventListener("click", async () => {
+                const cartData = {
+                    img: val.img,
+                    qty: val.qty,
+                    price: val.price,
+                    description: val.description
+                } 
+                try {
+                    let res = await fetch(cartApi, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(cartData)
+                    });
+                    window.location.href = "../HTML_pages/addCart.html"
+                } catch (error) {
+                    console.log("🚀 ~ error:", error);
+                }
+            })
+        }
+
+    }
+
+    handleIncrement(val)
+
+};
+
+
+const handleIncrement = (val) => {
+    const increment = document.querySelector(".increase");
+    const derement = document.querySelector(".descrease");
+    let count = document.querySelector("#count");
+    let total = document.querySelector("#total_price");
+
+    increment.addEventListener("click", async () => {
+        let newQty = val.qty + 1;
+        let newPrice = val.price * newQty
+
+        count.innerText = newQty;
+        total.innerText = val.price * newQty;
+
+        await fetch(`${livingApi}/${val.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                qty: newQty,
+                price: newPrice
+            })
+        });
+        console.log("🚀 ~ val:", val);
+
+        val.qty = newQty;
+    });
+
+
+    derement.addEventListener("click", async () => {
+        let newQty = val.qty - 1;
+        let newPrice = val.price * newQty
+
+        count.innerText = newQty;
+        total.innerText = val.price * newQty;
+
+        await fetch(`${livingApi}/${val.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                qty: newQty,
+                price: newPrice
+            })
+        });
+
+        val.qty = newQty;
+    });
 }
 
+
+window.onload = () => {
+    detailsData();
+}

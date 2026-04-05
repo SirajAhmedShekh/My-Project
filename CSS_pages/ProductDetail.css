@@ -26,7 +26,6 @@ p {
   display: flex;
   justify-content: space-evenly;
   padding: 7rem 2rem;
-  /* border: 2px solid red; */
 }
 
 .container .image_box {
@@ -47,7 +46,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 2px solid rgb(7, 151, 2); */
 }
 
 .container .detail_container .product_detail {
@@ -64,7 +62,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  /* border: 2px solid red; */
 }
 
 .container .detail_container .delivery_detail ul {
@@ -83,10 +80,12 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid blue; */
 }
 
 .container .detail_container .quantity .button {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
   text-align: center;
   font-size: 20px;
   border-radius: 5px;
@@ -106,9 +105,14 @@ p {
 button:hover {
   color: var(--golden-hour);
 }
-.container .detail_container .quantity .button span {
-  padding: 0.2rem 1.5rem;
-  }
+/* .container .detail_container .quantity .button span {
+  padding: 1rem 1rem;
+  } */
+#count{
+  width: 40px;
+  text-align: center;
+  border: none;
+}
 
 .container .detail_container .cart_btn {
   font-size: 20px;
@@ -124,3 +128,4 @@ button:hover {
     color: var(--black);
     background-color: var(--golden-hour);
 }
+
