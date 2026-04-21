@@ -29,7 +29,7 @@ export const navBar = () => {
 
           <div class="nav-right">
             <input type="text" placeholder="Search furniture..." class="search">
-            <a href="../HTML_pages/addCart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../HTML_pages/addCart.html"><i class="fa-solid fa-cart-shopping"><span>0</span></i></a>
             <a href="#"><i class="fa-solid fa-user"></i></a>
           </div>
   </div>
@@ -208,7 +208,6 @@ color:var(--golden-hour);
 .nav-right a li{
 color:var(--black);
 }
-
 
 
 

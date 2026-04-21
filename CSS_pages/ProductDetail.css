@@ -95,7 +95,7 @@ p {
 }
 
 .container .detail_container .quantity .button .increase,
-.descrease {
+.decrease {
   font-size: 2rem;
   padding: 0rem 0.8rem;
   border: none;
@@ -105,13 +105,14 @@ p {
 button:hover {
   color: var(--golden-hour);
 }
-/* .container .detail_container .quantity .button span {
-  padding: 1rem 1rem;
-  } */
+
 #count{
-  width: 40px;
+  width: 50px;
   text-align: center;
   border: none;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.7;
 }
 
 .container .detail_container .cart_btn {
