@@ -12,10 +12,44 @@
   --golden-hour: #f1b555;
   --antique-brown: #9b281a;
 }
+
+a{
+  text-decoration:none;
+  color: #000;
+}
+
 .header {
   position: relative;
   height: 60px;
 }
+
+.page_btn{
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.page_btn button{
+  font-size:16px;
+  padding: 5px 15px;
+  margin-top: 3rem;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid var(--golden-hour);
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px var(--golden-hour);
+}
+
+.page_btn button:active{
+  transition: all 0.2s linear;
+  background-color: var(--golden-hour);
+}
+
+.page_btn i{
+  color: var(--golden-hour);
+}
+
 .parent {
   width: 100%;
   height: auto;
@@ -42,7 +76,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 7px 0px rgb(7, 7, 7);
+   box-shadow: 0px 3px 5px var(--golden-hour);
   transition: 0.3s ease-in-out;
   border-radius: 5px;
   overflow: hidden;
@@ -129,4 +163,15 @@
 .pagination button:hover {
   background: var(--golden-hour);
   color: black;
+}
+
+#scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background-color:var(--golden-hour);
+  transform-origin: left;
+  z-index: 1000;
 }

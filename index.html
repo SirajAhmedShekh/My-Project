@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <!-- SCROLL PART -->
+   <div id="scroll-indicator"></div>
+        <article>
   <!-- HEADER PART -->
   <nav>
   </nav>
@@ -33,87 +36,7 @@
     <section class="card_container">
       <h1>Luxury Living <span> Room Set</span></h1>
       <div class="card_box">
-        <div class="card">
-          <img src="Utils/living/1-leaving-pieces-3-seat-l.jpg" alt="image">
-          <div class="card_info">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <h3>₹ 2300:00</h3>
-            <div class="review">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i><br>
-              <button class="card_btn">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="Utils/living/2-pieces-living-room.jpg" alt="image">
-          <div class="card_info">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <h3>₹ 2300:00</h3>
-            <div class="review">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i><br>
-              <button class="card_btn">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="Utils/living/4-leaving-set.avif" alt="image">
-          <div class="card_info">
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <h3>₹ 2300:00</h3>
-            <div class="review">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i><br>
-              <button class="card_btn">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="Utils/living/5-leavingset.jpg" alt="image">
-          <div class="card_info">
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <h3>₹ 2300:00</h3>
-            <div class="review">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i><br>
-              <button class="card_btn">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="Utils/living/6-leavingset-img.avif" alt="image">
-          <div class="card_info">
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <h3>₹ 2300:00</h3>
-            <div class="review">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i><br>
-              <button class="card_btn">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
+        <!-- <div class="card">
           <img src="Utils/living/7-leaving-set.avif" alt="image">
           <div class="card_info">
             <h2>title</h2>
@@ -128,7 +51,7 @@
               <button class="card_btn">View Details</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -426,6 +349,17 @@
   let styleTag = document.createElement("style");
   styleTag.textContent = navFooterStyle();
   document.head.append(styleTag);
-</script>
 
+  // SCROLL PART
+
+  const progressBar = document.getElementById('scroll-indicator');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+</script>
+<script src="./JS_pages/index.js"></script>
 </html>

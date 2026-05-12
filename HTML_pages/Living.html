@@ -12,9 +12,19 @@
 </head>
 
 <body>
+    <!-- SCROLL PART -->
+
+    <div id="scroll-indicator"></div>
+        <article>
     <nav class="header">
     </nav>
 
+    <!-- PAGE PART -->
+    <div class="page_btn">
+        <button>Living</button>
+        <i class="fa-solid fa-arrow-right"></i>
+        <button><a href="../index.html">Home</a></button>
+    </div>
     <div class="parent">
         <div class="parent_child">
         </div>
@@ -34,6 +44,16 @@
     let styleTag = document.createElement("style");
     styleTag.textContent = navFooterStyle();
     document.head.append(styleTag);
+
+    const progressBar = document.getElementById('scroll-indicator');
+
+    // SCROLL PART
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
 </script>
 
 <script src="../JS_pages/Living.js"></script>
