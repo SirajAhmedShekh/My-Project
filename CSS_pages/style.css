@@ -41,12 +41,11 @@ body {
   background-color: var(--gray);
   overflow-x: hidden;
   /* border: 2px solid red; */
-  }
-  
-  main{
-  width: 100%;
 }
 
+main {
+  width: 100%;
+}
 
 .card_container {
   width: 100%;
@@ -375,36 +374,33 @@ h3 {
   font-weight: bold;
 }
 
-.section06 .card_container {
+.section06 .card_container06 {
   width: 100%;
 }
 
-.section06 .card_container .card_box_1,
-.card_box_2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 5rem;
-  background-color: var(--gray);
+.section06 .card_container06 .card_box06 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 4rem 0;
+  gap: 3rem;
+  background-color: var(--gray); 
 }
 
-.section06 .card_container .card_box_2 {
-  margin-bottom: 0rem;
-}
-
-.section06 .card_container .card {
-  width: 41%;
+.section06 .card_container06 .card_box06 .card {
+  width: 80%;
   height: 19rem;
   display: flex;
+  margin-left: 4rem;
+  overflow: hidden;
   border-radius: 10px 10px 10px 10px;
   transform: skewX(15deg);
-  animation: box_1card_1 linear;
+  animation: card linear;
   animation-timeline: view(0);
   animation-range: entry 0 cover 40%;
   box-shadow: 0px 6px 13px 0px rgb(102, 100, 100);
 }
 
-@keyframes box_1card_1 {
+@keyframes card {
   from {
     opacity: 0;
     scale: 0.5;
@@ -415,13 +411,14 @@ h3 {
   }
 }
 
-.section06 .card_container .card:hover {
+.section06 .card_container06 .card_box06 .card:hover {
   box-shadow: 0px 6px 13px 0px var(--golden-hour);
 }
 
-.section06 .card_container .card img {
+.section06 .card_container06 .card_box06 .card img {
   width: 100%;
   height: 19rem;
+  position:relative;
   z-index: 1;
   animation: remove-card 0.8s forwards;
   border-radius: 10px 0px 0px 10px;
@@ -437,8 +434,10 @@ h3 {
   }
 }
 
-.section06 .card_container .card:hover img {
+.section06 .card_container06 .card_box06 .card:hover img {
+  right: 0%;
   animation: Dining-card 0.8s forwards;
+  
 }
 
 @keyframes Dining-card {
@@ -450,7 +449,7 @@ h3 {
   }
 }
 
-.section06 .card_container .card .card_info {
+.section06 .card_container06 .card_box06 .card .card_info {
   width: 50%;
   height: 19rem;
   position: fixed;
@@ -464,16 +463,16 @@ h3 {
   border-radius: 0px 10px 10px 0px;
 }
 
-.section06 .card_container .card .card_info p {
+.section06 .card_container06 .card_box06 .card .card_info p {
   color: var(--white);
 }
 
-.section06 .card_container .card .card_info h2,
+.section06 .card_container06 .card_box06 .card .card_info h2,
 .review i {
   color: var(--golden-hour);
 }
 
-.section06 .card_container .card .card_info .card_btn {
+.section06 .card_container06 .card_box06 .card .card_info .card_btn {
   padding: 9px 19px;
   margin-top: 1rem;
   border-radius: 5px;
@@ -486,7 +485,7 @@ h3 {
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.473);
 }
 
-.section06 .card_container .card .card_info .card_btn:hover {
+.section06 .card_container06 .card_box06 .card .card_info .card_btn:hover {
   background-color: var(--golden-hour);
   color: var(--white);
 }
@@ -766,7 +765,7 @@ h3 {
   left: 0;
   height: 5px;
   width: 0;
-  background-color:var(--golden-hour);
+  background-color: var(--golden-hour);
   transform-origin: left;
   z-index: 1000;
 }
