@@ -232,7 +232,7 @@ button:hover {
   /* background-color: #fff; */
 }
 
-.cart_container .container_child_2 .cart_price_box .total_price {
+.cart_container .container_child_2 .cart_price_box .price_box {
   width: 100%;
   height: 4rem;
   display: flex;

@@ -14,7 +14,7 @@ export const navBar = () => {
                 <a href="#">Shop ▾</a>
                 <ul class="dropdown-menu">
                   <li><a href="../HTML_pages/Living.html">Living Room</a></li>
-                  <li><a href="#">Bedroom</a></li>
+                  <li><a href="../HTML_pages/Bedroom.html">Bedroom</a></li>
                   <li><a href="#">Dining</a></li>
                   <li><a href="#">Office</a></li>
                 </ul>

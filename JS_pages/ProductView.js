@@ -1,14 +1,27 @@
 let livingApi = 'https://api-8q6p.onrender.com/living';
+let sofabedApi = 'https://api-8q6p.onrender.com/sofabed';
 let cartApi = 'https://api-8q6p.onrender.com/addToCart';
 
 const product = JSON.parse(sessionStorage.getItem("viewProduct"));
 
 const detailsData = async () => {
     try {
-        let res = await fetch(livingApi)
-        let productDetails = await res.json()
 
-        let matchProduct = productDetails.find((el) => el.id === product.id)
+        // living data
+        let livingRes = await fetch(livingApi);
+        let livingData = await livingRes.json();
+
+        // sofabed data
+        let sofaRes = await fetch(sofabedApi)
+        let sofaData = await sofaRes.json();
+
+        // all data merge
+        let allProducts = [
+            ...livingData,
+            ...sofaData
+        ]
+
+        let matchProduct = allProducts.find((el) => el.id === product.id)
 
         if (!matchProduct.qty) {
             matchProduct.qty = 1
@@ -85,7 +98,7 @@ const productViewFunc = (val) => {
                     img: val.img,
                     qty: val.qty,
                     price: val.price,
-                    description: val.description
+                    title: val.title
                 } ;
                      await fetch(cartApi, {
                         method: "POST",

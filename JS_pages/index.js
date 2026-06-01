@@ -1,7 +1,7 @@
 
 const livingApi = 'https://api-8q6p.onrender.com/living?_limit=6';
 const sofabedApi = 'https://api-8q6p.onrender.com/sofabed?_limit=6';
-const diningApi = 'https://api-8q6p.onrender.com/dining?_limit=6';
+const diningApi = 'https://api-8q6p.onrender.com/dining?_limit=4';
 const officeApi = 'https://api-8q6p.onrender.com/office?_limit=12';
 
 let livingCardBox = document.querySelector(".card_box");

@@ -31,7 +31,7 @@ p {
 
 .go_to_page {
   width: 100%;
-  height: 5rem;
+  height: 10rem;
   text-align: center;
   /* border: 2px solid red; */
 }
@@ -39,7 +39,7 @@ p {
 .go_to_page button {
   font-size: 16px;
   padding: 5px 15px;
-  margin-top: 3rem;
+  margin-top: 6rem;
   background-color: #fff;
   outline: none;
   border: 1px solid var(--white);
@@ -47,9 +47,8 @@ p {
   box-shadow: 0px 3px 5px var(--golden-hour);
 }
 
-.go_to_page button:hover{
+.go_to_page button:hover {
   border: 1px solid var(--golden-hour);
-
 }
 
 .go_to_page button:active {
@@ -68,18 +67,10 @@ p {
 .main_container .card_container {
   width: 100%;
   display: flex;
-  /* justify-content: space-between; */
   padding: 0.8rem;
   flex-wrap: wrap;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   gap: 2rem 0.8rem;
-  /* margin: 0px auto; */
-  /* display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
-  align-content: center; */
-  /* gap: 3rem; */
-  /* padding-top: 50px; */
 }
 
 .main_container .card_container .card {
@@ -98,7 +89,7 @@ p {
 }
 
 @keyframes remove_overflow {
-  to{
+  to {
     overflow: initial;
   }
 }
@@ -136,8 +127,8 @@ h2 {
 .main_container .card_container .card .card_info:hover h3,
 .main_container .card_container .card .card_info:hover h2,
 .main_container .card_container .card .card_info:hover p,
-.main_container .card_container .card .card_info:hover .review i{
-   animation: text 0.8s forwards;
+.main_container .card_container .card .card_info:hover .review i {
+  animation: text 0.8s forwards;
 }
 
 @keyframes text {
@@ -150,9 +141,6 @@ h2 {
   }
 }
 
-
-
-
 .main_container .card_container .card:hover .card_info {
   z-index: 2;
   background-color: #000000c7;
@@ -164,7 +152,7 @@ h2 {
 
 .main_container .card_container .card .card_info .review .card_btn {
   padding: 8px 20px;
-  border-radius: 5px;
+  border-radius: 3px;
   color: var(--gray);
   position: absolute;
   font-weight: bold;
@@ -172,14 +160,14 @@ h2 {
   top: 102%;
   right: 27%;
   outline: none;
-  border: none;
   background-color: var(--black);
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.473);
 }
 
-.main_container .card_container .card .card_info .review .card_btn:hover{
+.main_container .card_container .card .card_info .review .card_btn:hover {
   background-color: var(--golden-hour);
   color: var(--black);
+ padding: 6px 20px;
 }
 
 .main_container .card_container .card:hover .card_info .review .card_btn {
@@ -197,4 +185,42 @@ h2 {
     transform: translateY(-2rem);
     opacity: 1;
   }
+}
+
+
+/* === pagination css start === */
+
+.pagination {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 10px;
+}
+
+.pagination button {
+  border: 2px solid red;
+  padding: 8px 15px;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background: var(--golden-hour);
+  color: black;
+}
+
+#scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background-color:var(--golden-hour);
+  transform-origin: left;
+  z-index: 1000;
 }

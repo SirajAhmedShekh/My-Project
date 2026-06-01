@@ -20,16 +20,16 @@ const ApiFunc = async () => {
 
 const livingFunc = (value) => {
     // console.log("🚀 ~ value:", value);
-    parent_child.innerHTML = ""
+    parent_child.innerHTML = "";
 
     let start = (currentPage - 1) * itemsPerPage
     let end = start + itemsPerPage
 
-    let paginatedData = value.slice(start, end)
+    let paginatedData = value.slice(start, end);
 
     paginatedData.forEach((el) => {
         let card = document.createElement("div");
-        card.className = "card"
+        card.className = "card";
         card.innerHTML = `
                         <img src=${el.img} alt="image">
                         <div class="card_info">
@@ -39,7 +39,7 @@ const livingFunc = (value) => {
                             <div class="review">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>+
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star-half-stroke"></i><br>
                                 <button class="view_Btn">View Details</button>

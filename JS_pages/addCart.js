@@ -14,11 +14,13 @@ const cartDatas = async () => {
 
 
 const appendCartData = (val) => {
+    // console.log("🚀 ~ val:", val);
+    calculateCartTotal(val)
     const cartContainer = document.querySelector(".cart_box");
     cartContainer.innerHTML = "";
 
     val && val.forEach((el) => {
-        // console.log("🚀 ~ el:", el.qty);
+        // console.log("🚀 ~ el:", el);
         let card = document.createElement("div");
 
         card.innerHTML = `
@@ -26,7 +28,7 @@ const appendCartData = (val) => {
                         <div class="image_title">
                             <img src=${el.img} alt="image" />
                             <div class="price_title">
-                                <p>${el.description}</p>
+                                <p>${el.title}</p>
                                 <p>₹<span>${el.price}</span></p>
                             </div>
                         </div>
@@ -41,6 +43,7 @@ const appendCartData = (val) => {
                             <a class="deleteBtn"><i class="fa-solid fa-trash-arrow-up"></i></a>
                         </div>
                     </div>
+                    
         `;
 
 
@@ -72,6 +75,8 @@ const appendCartData = (val) => {
                         })
                     });
 
+                   await cartDatas();
+
                 } catch (error) {
                     console.log("🚀 ~ error:", error);
                 }
@@ -79,37 +84,41 @@ const appendCartData = (val) => {
         };
 
         if (decrement) {
-            decrement.addEventListener("click", async() =>{
-               
+            decrement.addEventListener("click", async () => {
+
                 if (count > 1) {
                     count--
                     countInput.value = count;
-                    total_price.innerText= el.price * count;
+                    total_price.innerText = el.price * count;
+
                     try {
                         await fetch(`${cartApi}/${el.id}`, {
-                            method:"PATCH",
-                            headers:{
-                                "Content-Type":"application/json"
+                            method: "PATCH",
+                            headers: {
+                                "Content-Type": "application/json"
                             },
-                            body:JSON.stringify({
-                                qty:count
+                            body: JSON.stringify({
+                                qty: count
                             })
                         })
+
+                        await cartDatas();
+
                     } catch (error) {
                         console.log("🚀 ~ error:", error);
                     }
-            }
+                }
             });
-            
+
         };
 
         if (removeItem) {
-            removeItem.addEventListener("click", async()=>{
+            removeItem.addEventListener("click", async () => {
                 try {
                     await fetch(`${cartApi}/${el.id}`, {
-                        method:"DELETE",
+                        method: "DELETE",
                     });
-                    cartDatas();
+                   await cartDatas();
                 } catch (error) {
                     console.log("🚀 ~ error:", error);
                 }
@@ -122,6 +131,64 @@ const appendCartData = (val) => {
 };
 
 
+const calculateCartTotal = (data) => {
+// console.log("🚀 ~ data:", data);
+
+    let total = document.querySelector(".total");
+    let taxPrice = document.querySelector(".tax_price");
+    let deliveryPrice = document.querySelector(".delivery_price");
+    let grandTotalPrice = document.querySelector(".grandTotal_price");
+    let couponInput = document.querySelector(".couponInput");
+    let couponBtn = document.querySelector(".coupon_btn");
+
+       let subTotal = 0;
+
+       data?.forEach((item) => {
+       console.log("🚀 ~ item:", item);
+    subTotal += item.price * item.qty;
+       });
+
+    //    taxPrice
+    let tax = subTotal * 18 / 100 ;
+
+    // delivery charge
+
+    let delivery = 500;
+
+    // grand total
+
+    let grandTotal = subTotal + tax + delivery;
+
+    
+    // show in UI
+    
+    total.innerText = subTotal;
+    taxPrice.innerText = tax.toFixed(2);
+    deliveryPrice.innerText = delivery;
+    grandTotalPrice.innerText = grandTotal.toFixed(2);
+
+
+    couponBtn.addEventListener("click", () => {  
+        
+        let couponValue = couponInput.value;
+
+        if (couponValue == "1234") {
+
+            // 20% discount
+
+           let discount = grandTotal * 20 / 100;
+
+            let fixAmount = grandTotal - discount;
+
+            grandTotalPrice.innerText = fixAmount.toFixed(2)
+        }else{
+           alert("Invalid Coupon Code")
+        };
+        
+       });
+};
+
+
 window.onload = () => {
     cartDatas()
-}
+};
