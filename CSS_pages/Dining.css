@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #f4f4f4;
+  --golden-hour: #f1b555;
+  --antique-brown: #9b281a;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h2,
+h3 {
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.go_to_page {
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+
+.go_to_page button {
+  font-size: 16px;
+  padding: 5px 15px;
+  margin-top: 6rem;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px var(--golden-hour);
+}
+
+.go_to_page button:hover {
+  border: 1px solid var(--golden-hour);
+}
+
+.go_to_page button:active {
+  transition: all 0.2s linear;
+  background-color: var(--golden-hour);
+}
+
+.go_to_page i {
+  color: var(--golden-hour);
+}
+
+body {
+  background-color: var(--gray);
+}
+
+.container {
+  width: 100%;
+}
+
+.container .card_box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding:3rem 0 3rem 0.9rem;
+  margin: 2rem 0 ;
+  gap:3.7rem 0;
+}
+
+.container .card_box .card {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.container .card_box .card:hover {
+  border-radius: 0px;
+  height: 23rem;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white);
+}
+
+.container .card_box .card img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container .card_box .card:hover img {
+  box-shadow: 0px 8px 15px rgb(104, 103, 103);
+  transform: translateY(-90px);
+}
+
+.container .card_box .card .card_info {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  gap: 0.7rem;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  flex-direction: column;
+  overflow: hidden;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+}
+
+.container .card_box .card:hover .card_info {
+  visibility: visible;
+  border-radius: 0;
+}
+
+.container .card_box .card .card_info .View_btn {
+  padding: 8px 20px;
+  border-radius: 3px;
+  color: var(--gray);
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: var(--black);
+  box-shadow: 0px 5px 7px var(--golden-hour);
+}
+
+.container .card_box .card .card_info .View_btn:hover {
+  background-color: var(--golden-hour);
+  color: var(--black);
+  padding: 8px 20px;
+}

@@ -15,7 +15,7 @@ h2 {
 }
 
 h3,
-p {
+p,h5 {
   opacity: 0.6;
 }
 
@@ -229,7 +229,6 @@ button:hover {
   text-align: center;
   padding: 2rem 1rem;
   border: 2px dotted rgb(216, 210, 210);
-  /* background-color: #fff; */
 }
 
 .cart_container .container_child_2 .cart_price_box .price_box {
@@ -252,6 +251,12 @@ button:hover {
   margin-bottom: 2rem;
 }
 
+.cart_container .container_child_2 .cart_price_box .coupon_input .inputBox{
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  text-align: start;
+}
+
 .cart_container .container_child_2 .cart_price_box .coupon_input input {
   width: 15rem;
   padding: 7px 15px;
@@ -263,6 +268,8 @@ button:hover {
   border-radius: 4px;
   outline: none;
 }
+
+
 
 .cart_container
   .container_child_2

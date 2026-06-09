@@ -79,9 +79,9 @@ const productViewFunc = (val) => {
     `
 
         let addToCart = viewProduct.querySelector(".cart_btn")
-        
-        if(addToCart){
-            
+
+        if (addToCart) {
+
             addToCart.addEventListener("click", async () => {
 
                 try {
@@ -91,23 +91,24 @@ const productViewFunc = (val) => {
                     let existingProduct = cartItems.find((item) => item.id === val.id);
                     if (existingProduct) {
                         window.location.href = "../HTML_pages/addCart.html";
-                        return ;
+                        return;
                     };
 
-                     const cartData = {
-                    img: val.img,
-                    qty: val.qty,
-                    price: val.price,
-                    title: val.title
-                } ;
-                     await fetch(cartApi, {
+                    const cartData = {
+                        id: val.id,
+                        img: val.img,
+                        qty: val.qty,
+                        price: val.price,
+                        title: val.title
+                    };
+                    await fetch(cartApi, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
                         },
                         body: JSON.stringify(cartData)
                     });
-                    window.location.href = "../HTML_pages/addCart.html"
+                    window.location.href = "../HTML_pages/addCart.html";
                 } catch (error) {
                     console.log("🚀 ~ error:", error);
                 }
@@ -143,19 +144,19 @@ const handleIncrement = (val) => {
             })
         });
         // console.log("🚀 ~ val:", val);
-        
+
         val.qty = newQty;
     });
-    
-    
+
+
     decrement.addEventListener("click", async () => {
-        if ((val.qty || 1) <= 1) return ;
-        
+        if ((val.qty || 1) <= 1) return;
+
         let newQty = val.qty - 1;
-        
+
         count.value = newQty;
         total.innerText = val.price * newQty;
-        
+
         await fetch(`${livingApi}/${val.id}`, {
             method: "PATCH",
             headers: {
@@ -163,11 +164,11 @@ const handleIncrement = (val) => {
             },
             body: JSON.stringify({
                 qty: newQty,
-                
+
             })
         });
         // console.log("🚀 ~ val:", val);
-        
+
         val.qty = newQty;
     });
 }
