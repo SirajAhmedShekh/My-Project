@@ -87,7 +87,6 @@ const bedDataFunc = (val) => {
      <img src=${els.img} alt="image">
           <div class="card_info">
             <h2>${els.title}</h2>
-            <p>${els.description}</p>
             <h3>₹ ${els.price}</h3>
             <div class="review">
               <i class="fa-solid fa-star"></i>

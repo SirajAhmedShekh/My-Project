@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #f4f4f4;
+  --golden-hour: #f1b555;
+  --antique-brown: #9b281a;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h2,
+h3 {
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.go_to_page {
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+
+.go_to_page button {
+  font-size: 16px;
+  padding: 5px 15px;
+  margin-top: 6rem;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px var(--golden-hour);
+}
+
+.go_to_page button:hover {
+  border: 1px solid var(--golden-hour);
+}
+
+.go_to_page button:active {
+  transition: all 0.2s linear;
+  background-color: var(--golden-hour);
+}
+
+.go_to_page i {
+  color: var(--golden-hour);
+}
+
+.card_container {
+  width: 100%;
+}
+
+.card_container .card_parent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_container .card_parent .office_card {
+  /* width: 17rem; */
+  height: 25rem;
+  flex: 1;
+  border: 2px solid red;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  /* overflow: hidden; */
+}
+
+.card_container .card_parent .office_card:hover {
+  transition: all 0.5s ease-in-out;
+  flex: 2;
+}
+
+.card_container .card_parent .office_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.card_container .card_parent .office_card .card_info {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  bottom: -40%;
+  color: var(--white);
+  padding: 0.8rem 0.2rem;
+  box-shadow: 15px 0px 10px rgba(14, 13, 13, 0.781) ;
+}
+
+.card_container .card_parent .office_card:hover .card_info {
+    animation: info 1.3s forwards;
+    z-index: 1;
+    background-image:linear-gradient(#333232c9, rgba(10, 10, 10, 0.781), rgba(0, 0, 0, 0.76));
+}
+
+@keyframes info {
+  50% {
+    transform: translateY(-10rem);
+  }
+
+  100% {
+    transform: translateY(-10rem);
+  }
+}
+
+.card_container .card_parent .office_card .card_info .View_btn {
+  padding: 8px 20px;
+  border-radius: 3px;
+  color: var(--gray);
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: var(--black);
+}
+
+.card_container .card_parent .office_card .card_info .View_btn:hover {
+  background-color: var(--golden-hour);
+  color: var(--black);
+  padding: 8px 20px;
+  box-shadow: 0px 5px 8px gray;
+}
