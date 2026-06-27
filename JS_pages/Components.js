@@ -15,8 +15,8 @@ export const navBar = () => {
                 <ul class="dropdown-menu">
                   <li><a href="../HTML_pages/Living.html">Living Room</a></li>
                   <li><a href="../HTML_pages/Bedroom.html">Bedroom</a></li>
-                  <li><a href="#">Dining</a></li>
-                  <li><a href="#">Office</a></li>
+                  <li><a href="../HTML_pages/Dining.html">Dining</a></li>
+                  <li><a href="../HTML_pages/Office.html">Office</a></li>
                 </ul>
               </li>
 
@@ -387,10 +387,16 @@ footer .container .box_2 .inner_box ul{
   border-top: 2px solid var(--golden-hour);
 }
 
-footer .container .box_2 .inner_box li{
+footer .container .box_2 .inner_box li a{
   line-height: 2.3rem;
   font-size: 18px;
   cursor: pointer;
+  text-decoration: none;
+  color:var(--white);
+}
+
+footer .container .box_2 .inner_box li:hover a{
+color: var(--golden-hour);
 }
 
 footer .container .box_2 .inner_box li:hover{
@@ -439,39 +445,39 @@ export const fooTer = () => {
           <div class="service">
             <h1>Customer Service</h1>
             <ul>
-              <li>Shipping & Returns</li>
-              <li>Track Order</li>
-              <li>Support</li>
-              <li>Privacy Policy</li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
 
           <div class="shop">
              <h1>Shop</h1>
             <ul>
-              <li>Living Room</li>
-              <li>Bedroom</li>
-              <li>Dining</li>
-              <li>Office</li>
+              <li><a href="../HTML_pages/Living.html">Living Room</a></li>
+              <li><a href="../HTML_pages/Bedroom.html">Bedroom</a></li>
+              <li><a href="../HTML_pages/Dining.html">Dining</a></li>
+              <li><a href="../HTML_pages/Office.html">Office</a></li>
             </ul>
           </div>
 
           <div class="about">
              <h1>About Us</h1>
             <ul>
-              <li>Our Story</li>
-              <li>Our stores</li>
-              <li>Blog</li>
-              <li>Careers</li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our stores</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
             </ul>
           </div>
 
           <div class="contact">
              <h1>Contact Us</h1>
             <ul>
-              <li> <i class="fa-solid fa-location-dot"></i> 143 Furniture st.,City,State</li>
-              <li> <i class="fa-solid fa-phone-volume"></i> +123-456-7890</li>
-              <li> <i class="fa-solid fa-envelope"></i> info@example.com</li>
+              <li> <a href="#"><i class="fa-solid fa-location-dot"></i> 143 Furniture st.,City,State</a></li>
+              <li> <a href="#"><i class="fa-solid fa-phone-volume"></i> +123-456-7890</a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope"></i> info@example.com</a></li>
             </ul>
           </div>
 

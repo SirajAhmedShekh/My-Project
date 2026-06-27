@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dining</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS_pages/Dining.css">
 </head>
+
 <body>
-    <div class="go_to_page">
-        <button>Dining</button>
-        <i class="fa-solid fa-arrow-right"></i>
-        <button><a href="../index.html">Home</a></button>
-    </div>
-    
-    <div class="container">
-        <div class="card_box">
-            <div class="card">
-                <img src="../Utils/Dining/12-modern-glass-dining-setup-with-chic-decor.avif" alt="image">
-                <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
-                    <h2>₹ 1110000</h2>
-                    <button class="View_btn">View Details</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../Utils/Dining/11-luxury-dining-room-with-wooden-accents.avif" alt="image">
-                <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
-                    <h2>₹ 1110000</h2>
-                    <button class="View_btn">View Details</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../Utils/Dining/15-luxury-rectangular-dining-setup.avif" alt="image">
-                <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
-                    <h2>₹ 1110000</h2>
-                    <button class="View_btn">View Details</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../Utils/Dining/3-modern-dining-area-with-wooden-accents.avif" alt="image">
-                <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
-                    <h2>₹ 1110000</h2>
-                    <button class="View_btn">View Details</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../Utils/Dining/10-elegant-dining-table-arrangement.avif" alt="image">
-                <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
-                    <h2>₹ 1110000</h2>
-                    <button class="View_btn">View Details</button>
-                </div>
+
+    <!-- SCROLL PART -->
+
+    <div id="scroll-indicator"></div>
+    <article>
+
+        <nav class="header">
+        </nav>
+
+        <div class="go_to_page">
+            <button>Dining</button>
+            <i class="fa-solid fa-arrow-right"></i>
+            <button><a href="../index.html">Home</a></button>
+        </div>
+
+        <div class="container">
+            <div class="card_box">
+                <!-- <div class="card">
+                    <img src="../Utils/Dining/12-modern-glass-dining-setup-with-chic-decor.avif" alt="image">
+                    <div class="card_info">
+                        <h3>Title Black dining table and grey plush chairs</h3>
+                        <h2>₹ 1110000</h2>
+                        <button class="View_btn">View Details</button>
+                    </div>
+                </div> -->
             </div>
         </div>
-    </div>
+
+        <div class="pagination"></div>
+
+        <footer class="footer">
+    </footer>
 </body>
+
+<script type="module">
+    import { navBar, navFooterStyle, fooTer } from "../JS_pages/Components.js";
+
+    document.querySelector('nav').innerHTML = navBar();
+    document.querySelector('.footer').innerHTML = fooTer();
+    let styleTag = document.createElement("style");
+    styleTag.textContent = navFooterStyle();
+    document.head.append(styleTag);
+
+    const progressBar = document.getElementById('scroll-indicator');
+
+    // SCROLL PART
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+</script>
+
+<script src="../JS_pages/Dining.js"></script>
+
 </html>

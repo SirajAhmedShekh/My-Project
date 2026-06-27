@@ -5,18 +5,11 @@
   font-family: "Open Sans", Sans-Serif;
 }
 
-h1,
-h2 {
-  color: var(--black);
-  font-style: italic;
+h3,
+p,h5,h1 {
+  opacity: 0.6;
   cursor: pointer;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
-  font-family: "Playfair Display", serif;
-}
-
-h3,
-p,h5 {
-  opacity: 0.6;
 }
 
 :root {
@@ -37,9 +30,24 @@ body {
   background-color: var(--gray);
 }
 
+.cart_msg{
+  text-align: center;
+  font-size: 4rem;
+  opacity: 0.6;
+  margin-top: 4rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+  font-family: "Playfair Display", serif;
+}
+
+.cart_msg:hover{
+  color: var(--golden-hour);
+  transition: all 0.3s ease-in-out;
+  opacity:1;
+}
+
 .cart_container .container_child_1 {
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +80,7 @@ body {
 h3:hover,
 i:hover {
   color: var(--golden-hour);
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -231,6 +240,10 @@ button:hover {
   border: 2px dotted rgb(216, 210, 210);
 }
 
+.cart_container .container_child_2 .cart_price_box h3{
+  font-size: 1.5rem;
+}
+
 .cart_container .container_child_2 .cart_price_box .price_box {
   width: 100%;
   height: 4rem;
@@ -252,7 +265,6 @@ button:hover {
 }
 
 .cart_container .container_child_2 .cart_price_box .coupon_input .inputBox{
-  /* border: 2px solid red; */
   margin-top: 20px;
   text-align: start;
 }

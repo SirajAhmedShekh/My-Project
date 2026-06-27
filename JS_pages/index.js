@@ -35,7 +35,6 @@ const livDataFunc = (value) => {
         <img src=${el.img} alt="image">
           <div class="card_info">
             <h2>${el.title}</h2>
-            <p>${el.description}</p>
             <h3>₹ ${el.price}</h3>
             <div class="review">
               <i class="fa-solid fa-star"></i>
@@ -139,7 +138,6 @@ const diningDataFunc = (vals) => {
             <img src=${elss.img} alt="">
             <div class="card_info">
               <h2>${elss.title}</h2>
-              <p>${elss.description}</p>
               <h3>₹ ${elss.price}</h3>
               <div class="review">
                 <i class="fa-solid fa-star"></i>

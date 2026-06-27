@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Office</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS_pages/Office.css">
 </head>
+
 <body>
-     <div class="go_to_page">
-        <button>Dining</button>
+
+     <!-- SCROLL PART -->
+
+    <div id="scroll-indicator"></div>
+        <article>
+    <nav class="header">
+    </nav>
+
+    <div class="go_to_page">
+        <button>Office</button>
         <i class="fa-solid fa-arrow-right"></i>
         <button><a href="../index.html">Home</a></button>
     </div>
@@ -16,49 +29,64 @@
     <div class="card_container">
         <div class="card_parent">
             <div class="office_card">
-                <img src="../Utils/office/2-office-chair-gray.jpg" alt="image">
+                <div class="image_box">
+                    <img src="../Utils/office/6-office-chairtransform-prime.webp" alt="image">
+                </div>
                 <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
                     <h2>₹ 1110000</h2>
                     <button class="View_btn">View Details</button>
                 </div>
             </div>
             <div class="office_card">
-                <img src="../Utils/office/2-office-chair-gray.jpg" alt="image">
+                <div class="image_box">
+                    <img src="../Utils/office/6-office-chairtransform-prime.webp" alt="image">
+                </div>
                 <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
                     <h2>₹ 1110000</h2>
                     <button class="View_btn">View Details</button>
                 </div>
             </div>
             <div class="office_card">
-                <img src="../Utils/office/2-office-chair-gray.jpg" alt="image">
+                <div class="image_box">
+                    <img src="../Utils/office/6-office-chairtransform-prime.webp" alt="image">
+                </div>
                 <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
                     <h2>₹ 1110000</h2>
                     <button class="View_btn">View Details</button>
                 </div>
             </div>
             <div class="office_card">
-                <img src="../Utils/office/2-office-chair-gray.jpg" alt="image">
+                <div class="image_box">
+                    <img src="../Utils/office/6-office-chairtransform-prime.webp" alt="image">
+                </div>
                 <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
                     <h2>₹ 1110000</h2>
                     <button class="View_btn">View Details</button>
                 </div>
             </div>
             <div class="office_card">
-                <img src="../Utils/office/2-office-chair-gray.jpg" alt="image">
+                <div class="image_box">
+                    <img src="../Utils/office/6-office-chairtransform-prime.webp" alt="image">
+                </div>
                 <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
                     <h2>₹ 1110000</h2>
                     <button class="View_btn">View Details</button>
                 </div>
             </div>
             <div class="office_card">
-                <img src="../Utils/office/2-office-chair-gray.jpg" alt="image">
+                <div class="image_box">
+                    <img src="../Utils/office/6-office-chairtransform-prime.webp" alt="image">
+                </div>
                 <div class="card_info">
-                    <h3>Title Black dining table and grey plush chairs</h3>
+                    <h2>₹ 1110000</h2>
+                    <button class="View_btn">View Details</button>
+                </div>
+            </div>
+            <div class="office_card">
+                <div class="image_box">
+                    <img src="../Utils/office/6-office-chairtransform-prime.webp" alt="image">
+                </div>
+                <div class="card_info">
                     <h2>₹ 1110000</h2>
                     <button class="View_btn">View Details</button>
                 </div>
@@ -66,5 +94,28 @@
         </div>
     </div>
 
+<footer class="footer">
+    </footer>
+
 </body>
+<script type="module">
+    import { navBar, navFooterStyle, fooTer } from "../JS_pages/Components.js";
+
+    document.querySelector('nav').innerHTML = navBar();
+    document.querySelector('.footer').innerHTML = fooTer();
+    let styleTag = document.createElement("style");
+    styleTag.textContent = navFooterStyle();
+    document.head.append(styleTag);
+
+    const progressBar = document.getElementById('scroll-indicator');
+
+    // SCROLL PART
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+</script>
+
 </html>

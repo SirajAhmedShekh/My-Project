@@ -47,7 +47,8 @@ a{
 }
 
 .page_btn i{
-  color: var(--golden-hour);
+  color: var(--golden-hour);  
+  text-shadow: 0px 3px 5px var(--golden-hour);
 }
 
 .parent {
@@ -164,6 +165,8 @@ a{
   background: var(--golden-hour);
   color: black;
 }
+
+/* SCROLL CSS START */
 
 #scroll-indicator {
   position: fixed;

@@ -3,6 +3,7 @@ let cartApi = 'https://api-8q6p.onrender.com/addToCart';
 
 let cartProduct = [];
 
+
 const cartDatas = async () => {
     try {
         let res = await fetch(cartApi)
@@ -23,12 +24,20 @@ const appendCartData = (val) => {
     calculateCartTotal(val)
     const cartContainer = document.querySelector(".cart_box");
     cartContainer.innerHTML = "";
+    if(val.length === 0){
+        cartContainer.innerHTML = ` <div class="cart_msg"> Your cart is empty</div>`;
+        return;
+    }
+
+    // let existingItem = val.find(item => item.id === val.id);
+
+    // if (existingItem) {
+    //     count++
+    // }
+
 
     val && val.forEach((el) => {
-         let existingItem = cartProduct.find(item => item.id === el.id);
-    if(existingItem){
-        alert ("added")
-    };
+        
         // console.log("🚀 ~ el:", el);
         let card = document.createElement("div");
 

@@ -21,7 +21,6 @@ const bedApiFunc = async() => {
 
 
 const sofabedApiFunc = (dataValue) => {
-// console.log("🚀 ~ sofabed:", sofabed);
 
     card_container.innerHTML = "";
 
