@@ -1,6 +1,7 @@
 let livingApi = 'https://api-8q6p.onrender.com/living';
 let sofabedApi = 'https://api-8q6p.onrender.com/sofabed';
 let cartApi = 'https://api-8q6p.onrender.com/addToCart';
+let diningApi = 'https://api-8q6p.onrender.com/dining';
 
 const product = JSON.parse(sessionStorage.getItem("viewProduct"));
 
@@ -15,10 +16,16 @@ const detailsData = async () => {
         let sofaRes = await fetch(sofabedApi)
         let sofaData = await sofaRes.json();
 
+        // sofabed data
+        let diningRes = await fetch(diningApi)
+        let diningData = await diningRes.json();
+
+
         // all data merge
         let allProducts = [
             ...livingData,
-            ...sofaData
+            ...sofaData,
+            ...diningData
         ]
 
         let matchProduct = allProducts.find((el) => el.id === product.id)

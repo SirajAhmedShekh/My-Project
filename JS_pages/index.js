@@ -148,11 +148,15 @@ const diningDataFunc = (vals) => {
                 <button class="card_btn">View More</button>
               </div>
               </div>
-            
       `;
 
-
-    diningCardBox.append(diningCard);
+      diningCardBox.append(diningCard);
+      
+      let diningCardBtn = diningCard.querySelector(".card_btn");
+      
+      diningCardBtn.addEventListener("click", () => {
+        window.location.href = "../HTML_pages/Dining.html"
+      });
   });
 };
 
@@ -193,8 +197,8 @@ const officeDataFunc = (valss) => {
 
     officeImg.forEach((img) => {
       img.addEventListener("click", () => {
-        alert ("officecard")
-        // window.location = "../HTML_pages/Office.html"
+
+        window.location = "../HTML_pages/Office.html";
       })
     })
 

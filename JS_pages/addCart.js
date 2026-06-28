@@ -162,7 +162,7 @@ const calculateCartTotal = (data) => {
        let subTotal = 0;
 
        data?.forEach((item) => {
-    //    console.log("🚀 ~ item:", item);
+    
     subTotal += item.price * item.qty;
        });
 

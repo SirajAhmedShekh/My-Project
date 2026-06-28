@@ -11,7 +11,6 @@ const diningApiFunc = async() => {
     try {
         let diningRes = await fetch(diningApi);
         let diningData = await diningRes.json();
-        // console.log("🚀 ~ diningData:", diningData);
 
         diningDataFunc(diningData)
     } catch (error) {
@@ -31,7 +30,6 @@ const diningDataFunc = (data) => {
     let paginationData = data.slice(start, end);
     
     paginationData?.forEach((dining) => {
-    console.log("🚀 ~ dining:", dining);
     
         let diningCard = document.createElement("div");
         diningCard.className = "card";
@@ -44,6 +42,14 @@ const diningDataFunc = (data) => {
                     </div>
     `
         cardBox.append(diningCard);
+
+        let viewBtn =diningCard.querySelector(".View_btn");
+
+        viewBtn.addEventListener("click", () => {
+            sessionStorage.setItem("viewProduct", JSON.stringify({id: dining.id}));
+            window.location.href= "../HTML_pages/ProductDetail.html";
+
+        })
 
     });
 
