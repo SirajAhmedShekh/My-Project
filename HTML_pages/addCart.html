@@ -13,6 +13,11 @@
 
 <body>
 
+    <!-- Internet Status -->
+        <div id="internet" class="internet">
+            Checking Connection...
+        </div>
+
      <nav>
     </nav>
 
@@ -74,13 +79,15 @@
  <script src="../JS_pages//addCart.js"></script>
 
 <script type="module">
-    import { navBar, navFooterStyle, fooTer } from "../JS_pages/Components.js";
+    import { navBar, navFooterStyle, fooTer, internetStatus } from "../JS_pages/Components.js";
 
     document.querySelector('nav').innerHTML = navBar();
     document.querySelector('.footer').innerHTML = fooTer();
     let styleTag = document.createElement("style");
     styleTag.textContent = navFooterStyle();
     document.head.append(styleTag);
+
+    internetStatus()
 </script>
 
 </html>

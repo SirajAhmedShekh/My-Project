@@ -13,49 +13,16 @@
 
 <body>
 
+    <!-- Internet Status -->
+        <div id="internet" class="internet">
+            Checking Connection...
+        </div>
+
      <nav class="header">
     </nav>
 
     <main>
         <div class="container">
-            <!-- <div class="image_box">
-                <img src="../Utils/living/10-leaving-rugs_blog.webp" alt="image">
-            </div>
-
-            <div class="detail_container">
-                <div class="product_detail">
-                    <h2>Contemporary Master Bedroom Suite</h2>
-                    <p>Modern King Size Bed with Vertical Channel-Tufted Headboard and Matching Bench.</p>
-                    <h4>₹ <span>145000</span></h4>
-                    <div class="review">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                </div>
-
-                <div class="delivery_detail">
-                    <h2>IN-HOME DELIVERY</h2>
-                    <P>In stock and ready for delivery to PIN Code <span>104235</span></P>
-                    <ul>
-                        <li>Placement in the room of your choice</li>
-                        <li>Assembly & removal of packaging</li>
-                        <li>Order multiple items, pay one flat rate delivery fee</li>
-                    </ul>
-                </div>
-                <div class="quantity">
-                    <div class="button">
-                        <button class="descrease" disabled="1" >-</button>
-                        <span>10</span>
-                        <button class="increase">+</button>
-                    </div>
-                    <h4>₹ <span>145000</span></h4>
-                </div>
-                <button class="cart_btn">ADD TO CART</button>
-            </div> -->
-
         </div>
     </main>
 
@@ -66,13 +33,15 @@
 </body>
 
 <script type="module">
-    import { navBar, navFooterStyle, fooTer } from "../JS_pages/Components.js";
+    import { navBar, navFooterStyle, fooTer, internetStatus } from "../JS_pages/Components.js";
 
     document.querySelector('nav').innerHTML = navBar();
     document.querySelector('.footer').innerHTML = fooTer();
     let styleTag = document.createElement("style");
     styleTag.textContent = navFooterStyle();
     document.head.append(styleTag);
+
+    internetStatus()
 </script>
 
 <script src="../JS_pages/ProductView.js"></script>

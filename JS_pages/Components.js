@@ -406,6 +406,36 @@ footer .container .box_2 .inner_box li:hover{
 footer .container .box_2 .inner_box .contact li i{
   margin:0 0.5rem 0 0;
 }
+
+/* Internet Status */
+
+.internet {
+  position: fixed;
+  bottom: 21px;
+  left: 45%;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: bolder;
+  background: var(--golden);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 31;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.internet:hover {
+  background: #000;
+}
+
+.internet.Online {
+  color: #1e8e3f;
+}
+
+.internet.Offline {
+  color: #c62829;
+}
  `
 }
 
@@ -465,8 +495,8 @@ export const fooTer = () => {
           <div class="about">
              <h1>About Us</h1>
             <ul>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Our stores</a></li>
+              <li><a href="../HTML_pages/About.html">Our Story</a></li>
+              <li><a href="../HTML_pages/About.html">Our stores</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Careers</a></li>
             </ul>
@@ -485,4 +515,32 @@ export const fooTer = () => {
       </div>
     </div>
 `
+};
+
+// Internet Status
+export const internetStatus = () => {
+  const statusBox = document.querySelector("#internet");
+
+  async function checkInternet() {
+    try {
+      await fetch("https://jsonplaceholder.typicode.com/posts/1", {
+        cache: "no-store",
+      });
+      statusBox.innerHTML = "You Are Online ✅";
+      statusBox.classList.remove("Offline");
+      statusBox.classList.add("Online");
+    } catch {
+      statusBox.innerHTML = "You Are Offline ❌";
+      statusBox.classList.remove("Online");
+      statusBox.classList.add("Offline");
+    }
+  }
+
+  checkInternet();
+
+  setInterval(checkInternet, 1000);
+
+  // Detect changes in real time
+  window.addEventListener("online", checkInternet);
+  window.addEventListener("offline", checkInternet);
 };

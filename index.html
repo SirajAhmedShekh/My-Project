@@ -12,9 +12,16 @@
 </head>
 
 <body>
+
+  <!-- Internet Status -->
+        <div id="internet" class="internet">
+            Checking Connection...
+        </div>
+
   <!-- SCROLL PART -->
   <div id="scroll-indicator"></div>
   <article>
+
     <!-- HEADER PART -->
     <nav>
     </nav>
@@ -191,7 +198,7 @@
 
 </body>
 <script type="module">
-  import { navBar, navFooterStyle, fooTer } from "./JS_pages/Components.js";
+  import { navBar, navFooterStyle, fooTer, internetStatus } from "./JS_pages/Components.js";
 
   document.querySelector('nav').innerHTML = navBar();
   document.querySelector('.footer').innerHTML = fooTer();
@@ -199,6 +206,8 @@
   styleTag.textContent = navFooterStyle();
   document.head.append(styleTag);
 
+  internetStatus();
+  
   // SCROLL PART
 
   const progressBar = document.getElementById('scroll-indicator');
@@ -209,6 +218,8 @@
     const scrollPercent = (scrollTop / docHeight) * 100;
     progressBar.style.width = scrollPercent + '%';
   });
+
+
 </script>
 <script src="./JS_pages/index.js"></script>
 
